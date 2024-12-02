@@ -1,3 +1,12 @@
+:root {
+    --hvid: #FDFCF6;
+    --lyseblå: #C4D4E8;
+    --gul: #FFBD59;
+    --blå: #3528A4;
+    --mørkeblå: #021642;
+}
+
+
 body {
     margin: 0;
     font-family: 'Jost', sans-serif;
