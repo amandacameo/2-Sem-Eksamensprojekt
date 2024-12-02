@@ -1,0 +1,7 @@
+body {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/Gradient background.png') no-repeat center/cover;
+    color: var(--text);
+}
