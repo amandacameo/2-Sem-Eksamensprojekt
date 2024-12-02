@@ -20,8 +20,12 @@ body {
 
 /*sørger for det står på linje*/
 .header-container {
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 /*Baggrundsbillede*/
@@ -48,6 +52,9 @@ body {
 }
 
 .header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #C4D4E8;
     border-radius: 40px;
     height: 60px;
@@ -57,11 +64,10 @@ body {
 
 .header-nav ul {
     display: flex;
-    flex-direction: row;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
-
 
 .header-nav ul li a {
     position: relative;
@@ -92,15 +98,17 @@ body {
 
 /*centrerer vores menu*/
 .header-buttons {
-    margin-right: 0;
-    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 /*book-knap*/
 .btn-book {
     background-color: #FFBD59;
     color: #021642;
-    padding: 13px 35px;
+    padding: 15px 35px;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
