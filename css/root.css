@@ -1,0 +1,19 @@
+:root {
+    --hvid: #FDFCF6;
+    --lyseblå: #C4D4E8;
+    --gul: #FFBD59;
+    --blå: #3528A4;
+    --mørkeblå: #021642;
+}
+
+@font-face {
+    font-family: 'Blanka';
+    src: url('../fonts/Blanka-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+}
