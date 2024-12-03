@@ -4,7 +4,7 @@ body {
 }
 
 .homepage {
-    background-image: url("../images/gradient-main.png");
+    background-image: url("../images/gradient2.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -196,11 +196,13 @@ body {
     width: 50%;
     height: 450px;
     background-color: var(--blå);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     color: var(--hvid);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .interview-quote .title {

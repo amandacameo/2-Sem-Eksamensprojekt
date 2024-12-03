@@ -1,6 +1,9 @@
 body.general-page {
     background-image: url("../images/gradient2.png");
-    background-repeat: repeat-y;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .header-pages {
@@ -17,7 +20,7 @@ body.general-page {
     border-radius: 30px;
     width: 85%;
     margin: 30px auto;
-    padding: 40px;
+    padding: 70px;
     text-align: center;
 }
 
