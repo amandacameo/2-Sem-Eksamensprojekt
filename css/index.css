@@ -17,6 +17,8 @@ body {
     background-position: center;
 }
 
+
+
 /*------BANNER------*/
 
 .titel-slogan {
@@ -70,19 +72,6 @@ body {
     width: 80%;
     text-align: center;
     margin-bottom: 20px;
-}
-
-
-.creative-choice .learn-more {
-    background-color: var(--gul);
-    color: var(--mørkeblå);
-    padding: 13px 35px;
-    text-decoration: none;
-    font-weight: 450;
-    font-size: 24px;
-    border-radius: 100px;
-    display: inline-block;
-    text-align: center;
 }
 
 /*------FYLD------*/
@@ -158,19 +147,6 @@ body {
     margin-bottom: 25px;
     width: 75%;
     margin-left: 12.5%;
-}
-
-.lightblue-section .learn-more {
-    background-color: var(--gul);
-    color: var(--mørkeblå);
-    padding: 13px 35px;
-    text-decoration: none;
-    font-weight: 450;
-    font-size: 24px;
-    border-radius: 100px;
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 40px;
 }
 
 .lightblue-section .image {
@@ -252,17 +228,4 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-
-.to-action .learn-more {
-    background-color: var(--gul);
-    color: var(--mørkeblå);
-    padding: 13px 35px;
-    text-decoration: none;
-    font-weight: 450;
-    font-size: 24px;
-    border-radius: 100px;
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 40px;
 }

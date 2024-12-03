@@ -17,3 +17,22 @@ body {
     margin: 0;
     font-family: 'Jost', sans-serif;
 }
+
+.learn-more {
+    background-color: var(--gul);
+    color: var(--mørkeblå);
+    padding: 13px 35px;
+    text-decoration: none;
+    font-weight: 450;
+    font-size: 24px;
+    border-radius: 100px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.learn-more:hover {
+    background-color: var(--blå);
+    color: var(--hvid);
+}

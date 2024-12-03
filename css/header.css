@@ -105,3 +105,8 @@
     display: inline-block;
     text-align: center;
 }
+
+.btn-book:hover {
+    background-color: var(--hvid);
+    color: var(--mørkeblå);
+}
