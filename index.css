@@ -18,6 +18,7 @@ body {
 
 /*------HEADER------*/
 
+
 /*sørger for det står på linje*/
 .header-container {
     display: flex;
@@ -118,6 +119,8 @@ body {
     text-align: center;
 }
 
+/*------BANNER------*/
+
 .titel-slogan {
     position: absolute;
     display: flex;
@@ -184,6 +187,8 @@ body {
     text-align: center;
 }
 
+/*------FYLD------*/
+
 .wcyd-section {
     display: flex;
     flex-direction: column;
@@ -224,6 +229,7 @@ body {
     border-radius: 40px;
 }
 
+/*------SEASON SECTION------*/
 .christmas-section {
     display: flex;
     flex-direction: row;
@@ -279,6 +285,7 @@ body {
     width: 30%;
 }
 
+/*------INTERVIEW------*/
 .interview-section {
     margin-top: 150px;
     display: flex;
@@ -359,6 +366,8 @@ body {
     text-align: center;
     margin-bottom: 40px;
 }
+
+/*------FOOTER------*/
 
 .footer {
     background-color: var(--lyseblå);

@@ -6,11 +6,17 @@
     --mørkeblå: #021642;
 }
 
+@font-face {
+    font-family: 'Blanka';
+    src: url('fonts/Blanka-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
     margin: 0;
     font-family: 'Jost', sans-serif;
-    background-image: url("images/gradient-main.png");
+    background-image: url("images/gradient2.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -18,17 +24,26 @@ body {
 
 /*------HEADER------*/
 
+.title-all {
+    color: var(--hvid);
+    font-family: 'Blanka', sans-serif;
+    font-size: 250px;
+}
+
 /*sørger for det står på linje*/
 .header-container {
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 /*Baggrundsbillede*/
 .header {
     height: 900px;
     padding: 20px;
-    background-image: url('Testbillede.png');
     background-size: cover;
     background-position: center;
 }
@@ -51,7 +66,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #C4D4E8;
+    background-color: var(--lyseblå);
     border-radius: 40px;
     height: 60px;
     padding-left: 40px;
@@ -59,17 +74,17 @@ body {
 }
 
 .header-nav ul {
-    list-style-type: none;
     display: flex;
-
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .header-nav ul li a {
     position: relative;
     text-decoration: none;
-    color: #021642;
+    color: var(--mørkeblå);
     font-size: 20px;
-    padding: 40px 30px;
     padding: 10px 30px;
     cursor: pointer;
     z-index: 1;
@@ -82,9 +97,10 @@ body {
     left: 50%;
     width: 0;
     height: 3px;
-    background-color: #021642;
+    background-color: var(--mørkeblå);
     transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
+
 
 .header-nav ul li a:hover::after {
     width: 50%;
@@ -94,15 +110,17 @@ body {
 
 /*centrerer vores menu*/
 .header-buttons {
-    margin-right: 0;
-    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 /*book-knap*/
 .btn-book {
-    background-color: #FFBD59;
-    color: #021642;
-    padding: 13px 35px;
+    background-color: var(--gul);
+    color: var(--mørkeblå);
+    padding: 15px 35px;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
@@ -110,19 +128,3 @@ body {
     display: inline-block;
     text-align: center;
 }
-
-.titel-slogan {
-    position: absolute;
-    display: flex;
-    bottom: 20px;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    align-items: center;
-}
-
-.titel-slogan img {
-    max-width: 100%;
-    height: auto;
-}
-
