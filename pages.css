@@ -1,0 +1,63 @@
+:root {
+    --hvid: #FDFCF6;
+    --lyseblå: #C4D4E8;
+    --gul: #FFBD59;
+    --blå: #3528A4;
+    --mørkeblå: #021642;
+}
+
+
+
+/*sørger for det står på linje*/
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.lightblue-section-course {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--lyseblå);
+    border-radius: 30px;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.lightblue-section-course .learn {
+    padding: 50px;
+}
+
+.lightblue-section-course .title {
+    font-weight: bold;
+    font-size: 48px;
+    color: var(--mørkeblå);
+    margin-bottom: 0;
+    text-align: left;
+    margin-top: 0;
+}
+
+.lightblue-section-course .sub-title {
+    color: var(--mørkeblå);
+    font-size: 32px;
+    text-align: left;
+    line-height: 1.8;
+
+
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.title-box {
+    font-size: 32px;
+    flex-direction: column;
+}

@@ -8,43 +8,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="kurser.css">
-    <link rel="stylesheet" href="index2.css" class="rel">
-
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
-
-<body>
-    <header>
-        <header class="header">
-            <div class="header-container">
-                <div class="logo">
+<body class="general-page"> <!-- General class for non-homepage pages -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="Startside.html">
                     <img src="images/logo.png" alt="FabLab Logo">
-                </div>
-
-                <nav class="header-nav">
-                    <ul>
-                        <li><a href="#">Kurser</a></li>
-                        <li><a href="#">Cases</a></li>
-                        <li><a href="#">Priser</a></li>
-                        <li><a href="#">Om os</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                    </ul>
-                </nav>
-
-                <div class="header-buttons">
-                    <a href="#" class="btn-book">Book</a>
-                </div>
-
+                </a>
             </div>
-            <p class="title-all">Kurser</p>
-        </header>
 
 
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="Startside.html">Hjem</a></li>
+                    <li><a href="Kurser.html" class="active">Kurser</a></li>
+                    <li><a href="#">Cases</a></li>
+                    <li><a href="#">Priser</a></li>
+                    <li><a href="#">Om os</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
 
+            <div class="header-buttons">
+                <a href="#" class="btn-book">Book</a>
+            </div>
+        </div>
+        <p class="title-all">Kurser</p>
     </header>
+    <section class="lightblue-section-course">
+        <div class="learn">
+            <p class="title">Kompetencegivende Kurser og Workshops i Fablab</p>
+            <p class="sub-title">Hos FabLab tilbyder vi kurser, der skærper dine skills og lærer dig at <b>mestre vores
+                    avancerede maskiner.</b> Vi elsker at tænke ud af boksen og deltager ofte i workshops, der booster
+                innovation på tværs af fag. Kurserne kan bookes som klasseforløb af uddannelser eller studerende, både
+                fysisk i FabLab eller online – nemt og hurtigt under <b>"Booking".</b> Her mødes kreativitet og
+                teknologi, og
+                vi hjælper dig med at gøre idéer til virkelighed.
+            </p>
+        </div>
 
+        <div class="info-box">
+            <p class="title-box">Find viden om maskinerne her:</p>
 
+        </div>
+    </section>
 </body>
 
 </html>

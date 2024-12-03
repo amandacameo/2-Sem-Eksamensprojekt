@@ -6,18 +6,38 @@
     --mørkeblå: #021642;
 }
 
+@font-face {
+    font-family: 'Blanka';
+    src: url('fonts/Blanka-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
     margin: 0;
     font-family: 'Jost', sans-serif;
+}
+
+body.homepage {
     background-image: url("images/gradient-main.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+body.general-page {
+    background-image: url("images/gradient2.png");
+}
+
+
 
 /*------HEADER------*/
 
+.title-all {
+    color: var(--hvid);
+    font-family: 'Blanka', sans-serif;
+    font-size: 250px;
+    margin-left: 10%;
+}
 
 /*sørger for det står på linje*/
 .header-container {
@@ -33,10 +53,24 @@ body {
 .header {
     height: 900px;
     padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.homepage .header {
+    height: 900px;
+    padding: 20px;
     background-image: url('Testbillede.png');
     background-size: cover;
     background-position: center;
 }
+
+.general-page .header {
+    background-image: none;
+}
+
+
+
 
 .logo {
     width: 70px;
@@ -230,7 +264,7 @@ body {
 }
 
 /*------SEASON SECTION------*/
-.christmas-section {
+.lightblue-section {
     display: flex;
     flex-direction: row;
     background-color: var(--lyseblå);
@@ -241,18 +275,18 @@ body {
     text-align: center;
 }
 
-.christmas-section .learn {
+.lightblue-section .learn {
     padding: 20px;
 }
 
-.christmas-section .title {
+.lightblue-section .title {
     font-weight: bold;
     font-size: 48px;
     color: var(--mørkeblå);
     margin-bottom: 0;
 }
 
-.christmas-section .sub-title {
+.lightblue-section .sub-title {
     color: var(--mørkeblå);
     font-size: 24px;
     font-weight: 450;
@@ -262,7 +296,7 @@ body {
     margin-left: 12.5%;
 }
 
-.christmas-section .learn-more {
+.lightblue-section .learn-more {
     background-color: var(--gul);
     color: var(--mørkeblå);
     padding: 13px 35px;
@@ -275,13 +309,13 @@ body {
     margin-bottom: 40px;
 }
 
-.christmas-section .image {
+.lightblue-section .image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.christmas-section img {
+.lightblue-section img {
     width: 30%;
 }
 
