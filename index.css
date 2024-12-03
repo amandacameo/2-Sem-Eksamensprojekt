@@ -55,7 +55,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #C4D4E8;
+    background-color: var(--lyseblå);
     border-radius: 40px;
     height: 60px;
     padding-left: 40px;
@@ -72,7 +72,7 @@ body {
 .header-nav ul li a {
     position: relative;
     text-decoration: none;
-    color: #021642;
+    color: var(--mørkeblå);
     font-size: 20px;
     padding: 10px 30px;
     cursor: pointer;
@@ -86,9 +86,10 @@ body {
     left: 50%;
     width: 0;
     height: 3px;
-    background-color: #021642;
+    background-color: var(--mørkeblå);
     transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
+
 
 .header-nav ul li a:hover::after {
     width: 50%;
@@ -106,8 +107,8 @@ body {
 
 /*book-knap*/
 .btn-book {
-    background-color: #FFBD59;
-    color: #021642;
+    background-color: var(--gul);
+    color: var(--mørkeblå);
     padding: 15px 35px;
     text-decoration: none;
     font-weight: bold;
@@ -170,9 +171,10 @@ body {
     margin-bottom: 20px;
 }
 
+
 .creative-choice .learn-more {
-    background-color: #FFBD59;
-    color: #021642;
+    background-color: var(--gul);
+    color: var(--mørkeblå);
     padding: 13px 35px;
     text-decoration: none;
     font-weight: 450;
@@ -205,8 +207,8 @@ body {
 }
 
 .wcyd-section .learn-more {
-    background-color: #FFBD59;
-    color: #021642;
+    background-color: var(--gul);
+    color: var(--mørkeblå);
     padding: 13px 35px;
     text-decoration: none;
     font-weight: 450;
@@ -255,8 +257,8 @@ body {
 }
 
 .christmas-section .learn-more {
-    background-color: #FFBD59;
-    color: #021642;
+    background-color: var(--gul);
+    color: var(--mørkeblå);
     padding: 13px 35px;
     text-decoration: none;
     font-weight: 450;
@@ -346,8 +348,8 @@ body {
 }
 
 .to-action .learn-more {
-    background-color: #FFBD59;
-    color: #021642;
+    background-color: var(--gul);
+    color: var(--mørkeblå);
     padding: 13px 35px;
     text-decoration: none;
     font-weight: 450;
