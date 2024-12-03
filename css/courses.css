@@ -132,6 +132,7 @@ body.general-page {
     border-radius: 40px;
     color: var(--hvid);
     margin-bottom: 200px;
+    box-shadow: 1px 0px 82px -11px var(--mørkeblå);
 }
 
 .badges-text {
