@@ -11,6 +11,7 @@
     src: url('fonts/Blanka-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+
 }
 
 body {
@@ -32,18 +33,18 @@ body.general-page {
 
 /*------HEADER------*/
 
-.title-all {
+.title-all h1 {
     color: var(--hvid);
     font-family: 'Blanka', sans-serif;
     font-size: 250px;
-    margin-left: 10%;
+    margin-left: 5%;
+    font-weight: 100;
 }
 
 /*sørger for det står på linje*/
 .header-container {
     display: flex;
     flex-direction: row;
-
     justify-content: space-between;
     align-items: center;
 
@@ -51,10 +52,12 @@ body.general-page {
 
 /*Baggrundsbillede*/
 .header {
-    height: 900px;
+    height: 900rpx;
     padding: 20px;
     background-size: cover;
     background-position: center;
+
+
 }
 
 .homepage .header {
