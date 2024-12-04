@@ -12,3 +12,58 @@ body.general-page {
     background-position: center;
     height: 600px;
 }
+
+.contact-intro {
+    margin-top: -50px;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 24px;
+    line-height: 1.6;
+    color: var(--hvid);
+}
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 90%;
+
+}
+
+.contact-box {
+    background-color: var(--lyseblå);
+    border-radius: 20px;
+    padding: 20px 30px;
+    color: var(--mørkeblå);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    text-align: center;
+}
+
+.contact-box h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.contact-box p {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.contact-box a {
+    color: var(--mørkeblå);
+    text-decoration: underline;
+}
