@@ -1,0 +1,32 @@
+body.general-page {
+    background-image: url("../images/gradient2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.header-pages {
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.case-photo {
+    width: 90%;
+    /* Fylder 90% af skærmbredden */
+    max-width: 1200px;
+    /* Begrænser bredden på store skærme */
+    margin-left: 20%;
+    /* Centrerer containeren */
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.case-photo img {
+    width: 100%;
+    /* Billedet fylder hele bredden af containeren */
+    height: auto;
+    /* Bevarer proportionerne */
+}

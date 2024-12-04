@@ -1,0 +1,14 @@
+body.general-page {
+    background-image: url("../images/gradient2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.header-pages {
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
