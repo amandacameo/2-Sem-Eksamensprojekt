@@ -46,6 +46,62 @@
     <main>
 
         <!--bookingsystem-->
+        <section class="booking-system">
+            <div class="booking-box">
+                <!-- Vælg værktøjer -->
+                <div class="booking-container">
+                    <div class="booking-options">
+                        <h2>Vælg den/de værktøjer du vil booke</h2>
+                        <form id="tool-selection">
+                            <label><input type="checkbox" name="tool" value="3D printer"> 3D printer</label>
+                            <label><input type="checkbox" name="tool" value="Laserskærer"> Laserskærer</label>
+                            <label><input type="checkbox" name="tool" value="Vinylskærer"> Vinylskærer</label>
+                            <label><input type="checkbox" name="tool" value="Print til tekstil"> Print til
+                                tekstil</label>
+                            <label><input type="checkbox" name="tool" value="Print til papir"> Print til papir</label>
+                        </form>
+                    </div>
+
+                    <!-- Kalender -->
+                    <div class="booking-calendar">
+                        <h2>Vælg en ledig dag</h2>
+                        <div class="calendar" id="calendar">
+                            <!-- JavaScript vil generere dato-knapper her -->
+                        </div>
+                        <div class="calendar-navigation">
+                            <button id="prev-month" aria-label="Forrige måned">←</button>
+                            <button id="next-month" aria-label="Næste måned">→</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brugeroplysninger -->
+                <div class="user-info">
+                    <h2>Brugeroplysninger</h2>
+                    <form id="user-info-form">
+                        <label for="name">Navn</label>
+                        <input type="text" id="name" name="name" placeholder="Navn" required>
+                        <label for="contact">Telefon nr eller mail</label>
+                        <input type="text" id="contact" name="contact" placeholder="Telefon nr eller mail" required>
+                        <label for="student-id">Studiekort nr</label>
+                        <input type="text" id="student-id" name="student-id" placeholder="Studiekort nr" required>
+                        <label>
+                            <input type="checkbox" id="reminder" name="reminder">
+                            Vil du modtage en påmindelse?
+                        </label>
+                        <div class="header-buttons">
+                            <button type="button" id="book-button" class="btn-book">Book nu</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
 
 
         <!--prisliste-->
@@ -66,31 +122,61 @@
         </section>
 
         <section class="price-list">
-            <div class="laser"></div>
-            <p class="title">Priseliste</p>
+            <h2 class="title">Priser</h2>
             <p class="sub-title">Laserskærer</p>
-            <p class="text">Jeg kendte til laserskæreren i FabLab, og fik idéen om at lave en personlig gave
-                til min
-                mor. Det var faktisk <b>meget lettere,</b> end jeg havde
-                forestillet mig. Jeg fandt hurtigt ud af, hvordan jeg kunne bruge designsoftwaren til at skabe et
-                unikt
-                mønster, og så var det bare at få det skåret ud.<br><br>
-                Jeg designede en smuk gave, som både var personlig og kreativ, og da min mor fik den, blev hun
-                virkelig
-                glad. Det var fedt at kunne skabe noget så specielt med bare en idé og nogle enkle værktøjer. Det
-                var en
-                utrolig lærerig oplevelse, og jeg kunne virkelig mærke, hvordan FabLabs teknologi gav mig nye
-                muligheder
-                for at udfolde min kreativitet.<br><br>
-                Jeg synes, det kunne være spændende at prøve noget med 3D-print næste gang. Der er så mange
-                muligheder,
-                og jeg vil helt sikkert gerne eksperimentere med at skabe noget på 3D-printeren i fremtiden. Jeg vil
-                anbefale alle at prøve laserskæreren – det er både sjovt og inspirerende!</p>
-
-
-            <p class="sub-title">Laserskærer</p>
-
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Materiale</th>
+                        <th>Størrelse</th>
+                        <th>Pris</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3mm clear acrylic</td>
+                        <td>600 x 450 mm</td>
+                        <td>100 kr</td>
+                    </tr>
+                    <tr>
+                        <td>6mm clear acrylic</td>
+                        <td>600 x 450 mm</td>
+                        <td>180 kr</td>
+                    </tr>
+                    <tr>
+                        <td>3mm HDF</td>
+                        <td>600 x 450 mm</td>
+                        <td>20 kr</td>
+                    </tr>
+                    <tr>
+                        <td>3mm sort HDF</td>
+                        <td>600 x 450 mm</td>
+                        <td>70 kr</td>
+                    </tr>
+                    <tr>
+                        <td>4mm MDF</td>
+                        <td>600 x 450 mm</td>
+                        <td>25 kr</td>
+                    </tr>
+                    <tr>
+                        <td>6mm MDF</td>
+                        <td>600 x 450 mm</td>
+                        <td>30 kr</td>
+                    </tr>
+                    <tr>
+                        <td>3mm Birch Plywood</td>
+                        <td>600 x 450 mm</td>
+                        <td>50 kr</td>
+                    </tr>
+                    <tr>
+                        <td>6mm Birch Plywood</td>
+                        <td>600 x 450 mm</td>
+                        <td>80 kr</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
+
 
 
     </main>

@@ -12,34 +12,3 @@ body.general-page {
     background-position: center;
     height: 600px;
 }
-
-.case {
-    margin: 5%;
-}
-
-.case-photo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.case-photo img {
-    width: 100%;
-    border-radius: 30px;
-}
-
-.case .title {
-    font-weight: bold;
-    font-size: 72px;
-    color: var(--hvid);
-    margin-bottom: 0;
-}
-
-.case .sub-title {
-    color: var(--hvid);
-    font-size: 24px;
-    font-weight: 450;
-    text-align: left;
-    margin-bottom: 100px;
-    line-height: 1.8;
-}

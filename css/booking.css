@@ -13,6 +13,241 @@ body.general-page {
     height: 600px;
 }
 
+/* Bookingsystem */
+.booking-box {
+    background-color: var(--blå);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.booking-system h2 {
+    font-size: 24px;
+    color: var(--hvid);
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#tool-selection {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.booking-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+
+.booking-options label {
+    background-color: var(--hvid);
+    color: var(--blå);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.booking-options input[type="checkbox"] {
+    display: none;
+}
+
+
+
+.calendar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.calendar button {
+    background-color: var(--hvid);
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--blå);
+    width: 80px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.calendar button:hover {
+    background-color: var(--lyseblå);
+    color: var(--hvid);
+}
+
+.calendar-navigation button {
+    background-color: var(--hvid);
+    color: var(--blå);
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.calendar-navigation button:hover {
+    background-color: var(--lyseblå);
+    color: var(--hvid);
+}
+
+.user-info {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.user-info label {
+    color: var(--hvid);
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.user-info input,
+.user-info select {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--hvid);
+    color: var(--blå);
+    font-size: 14px;
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-info input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user-info label[for="reminder"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Kalender-styling */
+.calendar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.calendar button {
+    background-color: var(--hvid);
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--blå);
+    width: 80px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.calendar button:hover {
+    background-color: var(--lyseblå);
+    color: var(--hvid);
+}
+
+.calendar-navigation button {
+    background-color: var(--hvid);
+    color: var(--blå);
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.calendar-navigation button:hover {
+    background-color: var(--lyseblå);
+    color: var(--hvid);
+}
+
+/* Brugeroplysninger - Justering */
+.user-info {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.user-info label {
+    color: var(--hvid);
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.user-info input,
+.user-info select {
+    width: 60%;
+    /* Gør felterne kortere */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--hvid);
+    color: var(--blå);
+    font-size: 14px;
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-info input:focus {
+    background-color: var(--lyseblå);
+    color: var(--hvid);
+}
+
+/* Checkbox for påmindelse */
+.user-info input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user-info label[for="reminder"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Bookingsystem slut */
+
+
+
+
 .lightblue-section {
     display: flex;
     flex-direction: column;
@@ -42,23 +277,35 @@ body.general-page {
     text-align: left;
 }
 
-.price-list {
-    margin: 5%;
-}
 
-
-.price-list .title {
-    font-weight: bold;
-    font-size: 72px;
-    color: var(--hvid);
-    margin-bottom: 0;
-}
-
-.price-list .sub-title {
-    color: var(--hvid);
-    font-size: 24px;
-    font-weight: 450;
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
     text-align: left;
-    margin-bottom: 100px;
-    line-height: 1.8;
+    color: var(--hvid);
+}
+
+.price-table thead th {
+    background-color: var(--mørkeblå);
+    color: var(--hvid);
+    padding: 10px;
+}
+
+.price-table tbody tr {
+    border-bottom: 1px solid var(--lyseblå);
+}
+
+.price-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.price-table td,
+.price-table th {
+    padding: 10px 20px;
+}
+
+.price-table tbody tr:nth-child(even) {
+    background-color: var(--lyseblå);
 }
