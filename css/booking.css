@@ -19,9 +19,9 @@ body.general-page {
     padding: 30px;
     border-radius: 20px;
     margin: 0 auto;
-    width: 95%;
-    max-width: 1400px;
+    width: 90%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .booking-system h2 {
@@ -167,13 +167,13 @@ body.general-page {
 
 .lightblue-section {
     display: flex;
-    flex-direction: column;
     background-color: var(--lyseblå);
     border-radius: 30px;
     width: 85%;
-    margin-left: 95px;
     padding: 30px;
-
+    margin-bottom: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .lightblue-section .learn {
@@ -195,34 +195,54 @@ body.general-page {
 }
 
 
+/*/* Prislisten */
+.price-list {
+    text-align: left;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.price-list .title {
+    font-size: 28px;
+    color: var(--hvid);
+    margin-bottom: 10px;
+}
+
+.price-list .sub-title {
+    font-size: 20px;
+    color: var(--hvid);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
 .price-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
     font-size: 18px;
     text-align: left;
     color: var(--hvid);
+    margin-bottom: 20px;
 }
 
-.price-table thead th {
-    background-color: var(--mørkeblå);
-    color: var(--hvid);
-    padding: 10px;
-}
-
-.price-table tbody tr {
-    border-bottom: 1px solid var(--lyseblå);
-}
-
-.price-table tbody tr:last-child {
-    border-bottom: none;
-}
-
-.price-table td,
 .price-table th {
+    font-weight: bold;
+    border-bottom: 2px solid var(--hvid);
     padding: 10px 20px;
 }
 
-.price-table tbody tr:nth-child(even) {
+.price-table td {
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--hvid);
+}
+
+.mobilepay-box {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: var(--mørkeblå);
     background-color: var(--lyseblå);
+    border-radius: 8px;
+    width: fit-content;
+    margin: 20px auto;
 }
