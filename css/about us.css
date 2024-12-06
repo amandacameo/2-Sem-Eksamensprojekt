@@ -105,3 +105,58 @@ main {
     text-align: center;
     margin-bottom: 50px;
 }
+
+.team-section {
+    margin-top: 100px;
+    text-align: center;
+    color: var(--hvid);
+    font-size: 48px;
+}
+
+.team-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+
+    margin: 0 auto;
+
+}
+
+.team-member img {
+    height: 200px;
+    width: 200px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.team-member {
+    text-align: center;
+    width: 25%;
+    /* Fire elementer per række med gap */
+}
+
+.team-member .name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-wrap: balance;
+}
+
+.team-member .role {
+    font-size: 24px;
+    color: var(--hvid);
+    margin-bottom: 10px;
+}
+
+.team-member .contact {
+    font-size: 24px;
+    color: var(--hvid);
+}
