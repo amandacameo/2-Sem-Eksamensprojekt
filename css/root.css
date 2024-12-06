@@ -23,16 +23,31 @@ body {
     color: var(--mørkeblå);
     padding: 13px 35px;
     text-decoration: none;
-    font-weight: 450;
+    font-weight: bold;
     font-size: 24px;
     border-radius: 100px;
     display: inline-block;
     text-align: center;
     margin-bottom: 40px;
-    font-weight: bold;
 }
 
 .learn-more:hover {
     background-color: var(--blå);
     color: var(--hvid);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .learn-more {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .learn-more {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
 }
