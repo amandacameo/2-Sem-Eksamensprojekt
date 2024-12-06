@@ -64,7 +64,7 @@ document.querySelector(".search-button").addEventListener("click", () => {
 
 // søg
 function performSearch() {
-    const searchInput = document.querySelector("#machine-search").value.toLowerCase().trim(); /
+    const searchInput = document.querySelector("#machine-search").value.toLowerCase().trim();
     let found = false; // variable til at spore match
 
     // loop
