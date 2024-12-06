@@ -75,8 +75,9 @@ main {
 }
 
 .booking-options input[type=checkbox]:checked+label {
-    color: #f00 !important;
     font-style: normal;
+    background-color: var(--mørkeblå);
+    color: var(--hvid);
 }
 
 .booking-calendar {
@@ -99,36 +100,30 @@ main {
 #date-picker,
 #time-picker {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     font-size: 24px;
     border: none;
-    border-radius: 8px;
-    color: var(--blå);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 40px;
+    color: var(--mørkeblå);
+    font-weight: bold;
 
 }
 
-#date-picker:focus,
-#time-picker:focus {
-    background-color: var(--lyseblå);
-    color: var(--hvid);
-    font-family: jost;
-}
 
 .calendar-select select {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 40px;
     border: none;
     background-color: var(--hvid);
     color: var(--blå);
-    transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 
 .calendar-select select:focus {
-    background-color: var(--lyseblå);
-    color: var(--hvid);
+    background-color: var(--hvid);
+    color: var(--mørkeblå);
 }
 
 
@@ -150,22 +145,19 @@ main {
 .user-info input,
 .user-info select {
     width: 49.5%;
-    /* Gør felterne kortere */
     padding: 10px;
     padding-right: 0;
     margin-bottom: 15px;
     border: none;
     border-radius: 40px;
     background-color: var(--hvid);
-    color: var(--blå);
+    color: var(--mørkeblå);
     font-size: 24px;
     outline: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .user-info input:focus {
-    background-color: var(--lyseblå);
-    color: var(--hvid);
+    color: var(--mørkeblå);
 }
 
 .user-info input[type="checkbox"] {
@@ -189,7 +181,7 @@ main {
     margin-bottom: 5px;
 }
 
-#book-button {
+.btn-book {
     margin-right: 0;
     margin-left: auto;
 }

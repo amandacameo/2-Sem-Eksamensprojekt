@@ -30,7 +30,7 @@ const searchKeywords = {
         "airbrush skabelon", "airbrush", "skabeloner"
     ],
     "T-shirt Print": [
-        "t-shirt", "t-shirttryk", "tshirttryk", "tekstil",
+        "t-shirt", "t-shirttryk", "tshirttryk", "tekstil", "tshirt",
         "tekstiltryk", "stoftryk", "tekstiler",
         "tasker", "tasketryk", "forklæde",
         "merchandise", "merch", "tryk",
