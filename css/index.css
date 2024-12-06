@@ -219,3 +219,23 @@ body {
     justify-content: center;
     text-align: center;
 }
+
+.to-action .learn-more {
+
+    background-color: var(--gul);
+    color: var(--mørkeblå);
+    padding: 13px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 100px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.to-action .learn-more:hover {
+    background-color: var(--mørkeblå);
+    color: var(--hvid);
+}
