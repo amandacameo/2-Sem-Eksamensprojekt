@@ -48,6 +48,13 @@ const searchKeywords = {
     ]
 };
 
+// event listener
+document.querySelector("#machine-search").addEventListener("keydown", (event) => {
+    if (event.key === "Enter") { /
+        event.preventDefault();
+        performSearch();
+    });
+
 
 
 
