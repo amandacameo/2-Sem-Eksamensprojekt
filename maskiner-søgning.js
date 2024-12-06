@@ -1,4 +1,4 @@
-// DATASTRUKTUR FOR MASKINER OG NØGLEORD
+// struktur 
 const searchKeywords = {
     "Laserskærer": [
         "gravering", "graver", "graveringer",
@@ -50,12 +50,11 @@ const searchKeywords = {
 
 // event listener
 document.querySelector("#machine-search").addEventListener("keydown", (event) => {
-    if (event.key === "Enter") { /
+    if (event.key === "Enter") {
         event.preventDefault();
         performSearch();
-    });
-
-
+    }
+});
 
 
 // event listener
@@ -63,10 +62,32 @@ document.querySelector(".search-button").addEventListener("click", () => {
     performSearch(); // alder søgefunktiion
 });
 
-// SØGEFUNKTION
+// søgning
 function performSearch() {
     const searchInput = document.querySelector("#machine-search").value.toLowerCase().trim(); // Brugerinput
     let found = false; // variabel til at spore match
 
 
 }
+
+// loop
+for (const [machine, keywords] of Object.entries(searchKeywords)) {
+    if (keywords.includes(searchInput)) { // tjekker om input matcher et nøgleord
+        found = true;
+
+        // finder og scroller til maskinen
+        const machineSection = Array.from(document.querySelectorAll("h4"))
+            .find(section => section.textContent.toLowerCase() === machine.toLowerCase());
+        if (machineSection) {
+            machineSection.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+        break;
+    }
+}
+
+// hvis der ikke er fundet matches
+if (!found) {
+    displayMessage("Ingen maskine matchede din søgning. Prøv igen!");
+}
+
+
