@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/booking.css">
+    <script src="booking.js" defer></script>
 </head>
 
 <body class="general-page">
@@ -73,45 +74,39 @@
                     <!-- Kalender -->
                     <div class="booking-calendar">
                         <h2>Vælg en ledig dag</h2>
-                        <div class="calendar" id="calendar">
-                            <!-- JavaScript dato-knapper her -->
-                            <button id="prev-month" aria-label="Forrige måned"></button>
-                            <div class="calendar-inner">
-                                <div class="calendar-item"><span>2. Dec</span></div>
-                                <div class="calendar-item"><span>2. Dec</span></div>
-                                <div class="calendar-item"><span>2. Dec</span></div>
-                                <div class="calendar-item"><span>2. Dec</span></div>
-                                <div class="calendar-item"><span>2. Dec</span></div>
-                                <div class="calendar-item"><span>2. Dec</span></div>
-                                <div class="calendar-item"><span>2. Dec</span></div>
-                                <div class="calendar-item"><span>2. Dec</span></div>
-                                <div class="calendar-item"><span>2. Dec</span></div>
+                        <div class="calendar-select">
+                            <select id="date-picker" name="booking-date" required>
+                                <option value="" disabled selected>Vælg en dag</option>
+                            </select>
 
-                            </div>
-                            <button id="next-month" aria-label="Næste måned">→</button>
+
+                            <select id="time-picker" name="booking-time" required>
+                                <option value="" disabled selected>Vælg et tidspunkt</option>
+                            </select>
                         </div>
+
+                    </div>
+
+
+                    <!-- Brugeroplysninger -->
+                    <div class="user-info">
+                        <form id="user-info-form">
+                            <label for="name">Navn</label>
+                            <input type="text" id="name" name="name" placeholder="Amanda Cameo" required>
+                            <label for="contact">Telefon nr eller mail</label>
+                            <input type="text" id="contact" name="contact" placeholder="email@example.com" required>
+                            <label for="student-id">Studiekort nr</label>
+                            <input type="text" id="student-id" name="student-id" placeholder="2312423" required>
+                            <div class="reminder">
+                                <span>Vil du modtage en påmindelse?</span>
+                                <input type="checkbox" id="reminder" name="reminder">
+                            </div>
+                            <div class="header-buttons">
+                                <button type="button" id="book-button" class="btn-book">Book nu</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-
-                <!-- Brugeroplysninger -->
-                <div class="user-info">
-                    <form id="user-info-form">
-                        <label for="name">Navn</label>
-                        <input type="text" id="name" name="name" placeholder="Amanda Cameo" required>
-                        <label for="contact">Telefon nr eller mail</label>
-                        <input type="text" id="contact" name="contact" placeholder="email@example.com" required>
-                        <label for="student-id">Studiekort nr</label>
-                        <input type="text" id="student-id" name="student-id" placeholder="2312423" required>
-                        <div class="reminder">
-                            <span>Vil du modtage en påmindelse?</span>
-                            <input type="checkbox" id="reminder" name="reminder">
-                        </div>
-                        <div class="header-buttons">
-                            <button type="button" id="book-button" class="btn-book">Book nu</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
         </section>
 
 
@@ -247,11 +242,7 @@
                 <div class="map-section">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.7336150654827!2d10.388835216134066!3d55.39151098044788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464cdff23342c87d%3A0x4f19e2c79cf7f3f!2sSeebladsgade%201%2C%205000%20Odense%2C%20Danmark!5e0!3m2!1sen!2sdk!4v1696000000000!5m2!1sen!2sdk"
-                        width="300"
-                        height="200"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>

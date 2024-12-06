@@ -84,64 +84,51 @@ main {
     margin-left: 20px;
 }
 
-.calendar {
-    width: 100%;
+
+.calendar-select {
+    margin-top: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.calendar button {
-    background-color: var(--hvid);
-    border: none;
-    padding: 15px;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 14px;
-    color: var(--blå);
-    width: 80px;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
+#date-picker {
+    margin-bottom: 100px;
 }
 
-.calendar button:hover {
-    background-color: var(--lyseblå);
-    color: var(--hvid);
-}
-
-.calendar-navigation button {
-    background-color: var(--hvid);
-    color: var(--blå);
-    border: none;
+#date-picker,
+#time-picker {
+    width: 100%;
     padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-    margin: 10px 5px;
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    color: var(--blå);
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+#date-picker:focus,
+#time-picker:focus {
+    background-color: var(--lyseblå);
+    color: var(--hvid);
+    font-family: jost;
+}
+
+.calendar-select select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--hvid);
+    color: var(--blå);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.calendar-navigation button:hover {
+.calendar-select select:focus {
     background-color: var(--lyseblå);
     color: var(--hvid);
-}
-
-.calendar-inner {
-    display: grid;
-    grid-template-columns: 18% 18% 18% 18% 18%;
-    gap: 2%;
-    width: 100%;
-}
-
-.calendar-item {
-    width: 100px;
-    height: 100px;
-    background-color: var(--hvid);
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--mørkeblå);
-    font-size: 24px;
-    font-weight: bold;
 }
 
 
