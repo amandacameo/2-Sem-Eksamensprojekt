@@ -1,11 +1,15 @@
 /*------HEADER------*/
 
+.title-all {
+    width: 80%;
+}
+
 .title-all h1 {
     color: var(--hvid);
     font-family: 'Blanka', sans-serif;
     font-size: 250px;
-    margin-left: 5%;
     font-weight: 100;
+    margin-left: 0;
 }
 
 /*sørger for det står på linje*/

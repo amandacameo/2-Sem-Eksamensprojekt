@@ -6,11 +6,15 @@ body.general-page {
 
 }
 
+main {
+    width: 80%;
+    margin-left: 10%;
+}
+
 .header-pages {
     padding: 20px;
     background-size: cover;
     background-position: center;
-    height: 600px;
 }
 
 /* Bookingsystem */
@@ -48,13 +52,15 @@ body.general-page {
 
 
 
+.booking-options {
+    width: 50%;
+}
 
 .booking-options label {
     background-color: var(--hvid);
-    color: var(--blå);
+    color: var(--mørkeblå);
     padding: 15px;
-    border-radius: 15px;
-    text-align: center;
+    border-radius: 40px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -63,16 +69,25 @@ body.general-page {
 }
 
 .booking-options input[type="checkbox"] {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
 }
 
+.booking-options input[type=checkbox]:checked+label {
+    color: #f00 !important;
+    font-style: normal;
+}
 
+.booking-calendar {
+    width: 48%;
+    margin-left: 20px;
+}
 
 .calendar {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
+    flex-direction: row;
 }
 
 .calendar button {
@@ -109,6 +124,26 @@ body.general-page {
     color: var(--hvid);
 }
 
+.calendar-inner {
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18% 18%;
+    gap: 2%;
+    width: 100%;
+}
+
+.calendar-item {
+    width: 100px;
+    height: 100px;
+    background-color: var(--hvid);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--mørkeblå);
+    font-size: 24px;
+    font-weight: bold;
+}
+
 
 
 /* Brugeroplysninger - Justering */
@@ -119,22 +154,24 @@ body.general-page {
 
 .user-info label {
     color: var(--hvid);
-    font-size: 16px;
+    font-size: 24px;
+    font-weight: bold;
     margin-bottom: 5px;
     display: block;
 }
 
 .user-info input,
 .user-info select {
-    width: 60%;
+    width: 49.5%;
     /* Gør felterne kortere */
     padding: 10px;
+    padding-right: 0;
     margin-bottom: 15px;
     border: none;
-    border-radius: 15px;
+    border-radius: 40px;
     background-color: var(--hvid);
     color: var(--blå);
-    font-size: 14px;
+    font-size: 24px;
     outline: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -144,45 +181,53 @@ body.general-page {
     color: var(--hvid);
 }
 
-/* Checkbox for påmindelse */
 .user-info input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
-    margin-left: auto;
-    display: inline-block;
-    vertical-align: middle;
+    border-radius: 40px;
+    margin-left: 20px;
 }
 
-.user-info label[for="reminder"] {
+.user-info .reminder {
+    margin-top: 40px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 50%;
+}
+
+.user-info .reminder span {
+    color: var(--hvid);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#book-button {
+    margin-right: 0;
+    margin-left: auto;
 }
 
 /* Bookingsystem slut */
 
 
-
+.h1 {
+    margin-bottom: 20px;
+}
 
 .lightblue-section {
     display: flex;
     background-color: var(--lyseblå);
+    width: 100%;
     border-radius: 30px;
-    width: 85%;
     padding: 30px;
     margin-bottom: 100px;
-    margin-left: 5%;
-    margin-right: 5%;
+
 }
 
-.lightblue-section .learn {
-    margin-bottom: 30px;
-}
 
 .lightblue-section .title {
     font-weight: bold;
-    font-size: 32px;
+    font-size: 24px;
     color: var(--mørkeblå);
     text-align: left;
 }
@@ -195,7 +240,7 @@ body.general-page {
 }
 
 
-/*/* Prislisten */
+/* Prislisten */
 .price-list {
     text-align: left;
     margin: 20px auto;
@@ -204,13 +249,13 @@ body.general-page {
 }
 
 .price-list .title {
-    font-size: 28px;
+    font-size: 48px;
     color: var(--hvid);
     margin-bottom: 10px;
 }
 
 .price-list .sub-title {
-    font-size: 20px;
+    font-size: 32px;
     color: var(--hvid);
     margin-top: 30px;
     margin-bottom: 10px;
@@ -219,7 +264,7 @@ body.general-page {
 .price-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 18px;
+    font-size: 24px;
     text-align: left;
     color: var(--hvid);
     margin-bottom: 20px;
@@ -236,13 +281,32 @@ body.general-page {
     border-bottom: 1px solid var(--hvid);
 }
 
+.booking-box,
+.price-list {
+    max-width: 1600px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .mobilepay-box {
     padding: 10px;
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
     color: var(--mørkeblå);
     background-color: var(--lyseblå);
     border-radius: 8px;
     width: fit-content;
     margin: 20px auto;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.mobilepay-info {
+    text-align: center;
+    font-size: 16px;
+    color: var(--hvid);
+    margin-top: 10px;
+    line-height: 1.5;
 }

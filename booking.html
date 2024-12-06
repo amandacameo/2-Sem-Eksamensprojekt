@@ -36,9 +36,6 @@
                 <a href="booking.html" class="btn-book">Book</a>
             </div>
         </div>
-        <section class="title-all">
-            <h1 class="h1">Booking</h1>
-        </section>
     </header>
 
 
@@ -46,6 +43,9 @@
     <main>
 
         <!--bookingsystem-->
+        <section class="title-all">
+            <h1 class="h1">Booking</h1>
+        </section>
         <section class="booking-system">
             <div class="booking-box">
 
@@ -53,12 +53,20 @@
                     <div class="booking-options">
                         <h2>Vælg den/de værktøjer du vil booke</h2>
                         <form id="tool-selection">
-                            <label><input type="checkbox" name="tool" value="3D printer"> 3D printer</label>
-                            <label><input type="checkbox" name="tool" value="Laserskærer"> Laserskærer</label>
-                            <label><input type="checkbox" name="tool" value="Vinylskærer"> Vinylskærer</label>
-                            <label><input type="checkbox" name="tool" value="Print til tekstil"> Print til
-                                tekstil</label>
-                            <label><input type="checkbox" name="tool" value="Print til papir"> Print til papir</label>
+                            <input type="checkbox" name="tool" value="3D printer" id="3dprinter">
+                            <label for="3dprinter">3D printer</label>
+
+                            <input type="checkbox" name="tool" value="Laserskærer" id="lasercutter">
+                            <label for="lasercutter">Laserskærer</label>
+
+                            <input type="checkbox" name="tool" value="Vinylskærer" id="vinylcutter">
+                            <label for="vinylcutter">Vinylskærer</label>
+
+                            <input type="checkbox" name="tool" value="Print til tekstil" id="printtextile">
+                            <label for="printtextile">Print til tekstil</label>
+
+                            <input type="checkbox" name="tool" value="Print til papir" id="printpaper">
+                            <label for="printpaper">Print til papir</label>
                         </form>
                     </div>
 
@@ -67,9 +75,19 @@
                         <h2>Vælg en ledig dag</h2>
                         <div class="calendar" id="calendar">
                             <!-- JavaScript dato-knapper her -->
-                        </div>
-                        <div class="calendar-navigation">
                             <button id="prev-month" aria-label="Forrige måned">←</button>
+                            <div class="calendar-inner">
+                                <div class="calendar-item"><span>2. Dec</span></div>
+                                <div class="calendar-item"><span>2. Dec</span></div>
+                                <div class="calendar-item"><span>2. Dec</span></div>
+                                <div class="calendar-item"><span>2. Dec</span></div>
+                                <div class="calendar-item"><span>2. Dec</span></div>
+                                <div class="calendar-item"><span>2. Dec</span></div>
+                                <div class="calendar-item"><span>2. Dec</span></div>
+                                <div class="calendar-item"><span>2. Dec</span></div>
+                                <div class="calendar-item"><span>2. Dec</span></div>
+
+                            </div>
                             <button id="next-month" aria-label="Næste måned">→</button>
                         </div>
                     </div>
@@ -77,18 +95,17 @@
 
                 <!-- Brugeroplysninger -->
                 <div class="user-info">
-                    <h2>Brugeroplysninger</h2>
                     <form id="user-info-form">
                         <label for="name">Navn</label>
-                        <input type="text" id="name" name="name" placeholder="Navn" required>
+                        <input type="text" id="name" name="name" placeholder="Amanda Cameo" required>
                         <label for="contact">Telefon nr eller mail</label>
-                        <input type="text" id="contact" name="contact" placeholder="Telefon nr eller mail" required>
+                        <input type="text" id="contact" name="contact" placeholder="email@example.com" required>
                         <label for="student-id">Studiekort nr</label>
-                        <input type="text" id="student-id" name="student-id" placeholder="Studiekort nr" required>
-                        <label>
+                        <input type="text" id="student-id" name="student-id" placeholder="2312423" required>
+                        <div class="reminder">
+                            <span>Vil du modtage en påmindelse?</span>
                             <input type="checkbox" id="reminder" name="reminder">
-                            Vil du modtage en påmindelse?
-                        </label>
+                        </div>
                         <div class="header-buttons">
                             <button type="button" id="book-button" class="btn-book">Book nu</button>
                         </div>
@@ -119,7 +136,7 @@
 
 
         <section class="price-list">
-            <h2 class="title">Priser</h2>
+            <h2 class="title">Prisliste</h2>
             <p class="sub-title">Laserskærer</p>
             <table class="price-table">
                 <thead>
@@ -214,6 +231,9 @@
             <div class="mobilepay-box">
                 <p>946470<br>MobilePay</p>
             </div>
+            <p class="mobilepay-info">FabLab benytter MobilePay som betalingsmetode. Nummeret kan ses her på siden og i
+                selve FabLab.</p>
+
         </section>
 
 

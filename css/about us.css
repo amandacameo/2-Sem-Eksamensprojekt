@@ -10,14 +10,16 @@ body.general-page {
     padding: 20px;
     background-size: cover;
     background-position: center;
-    height: 600px;
-    margin-bottom: 100px;
+}
+
+main {
+    width: 80%;
+    margin-left: 10%;
 }
 
 .about-us-section {
     display: flex;
     flex-direction: column;
-    width: 85%;
     margin: 20px auto;
 }
 
@@ -79,7 +81,7 @@ body.general-page {
     background-color: var(--lyseblå);
     border-radius: 30px;
     text-align: center;
-    margin: 100px;
+    margin-top: 100px;
 }
 
 .lightblue-section .learn {

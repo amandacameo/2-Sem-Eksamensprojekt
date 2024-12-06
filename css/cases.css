@@ -10,7 +10,11 @@ body.general-page {
     padding: 20px;
     background-size: cover;
     background-position: center;
-    height: 600px;
+}
+
+main {
+    width: 80%;
+    margin-left: 10%;
 }
 
 .case {
@@ -18,7 +22,7 @@ body.general-page {
 }
 
 .case-photo {
-    width: 95%;
+    width: 100%;
     border-radius: 30px;
     overflow: hidden;
     display: flex;
