@@ -58,3 +58,15 @@ document.querySelector("#machine-search").addEventListener("keydown", (event) =>
 
 
 
+// event listener
+document.querySelector(".search-button").addEventListener("click", () => {
+    performSearch(); // alder søgefunktiion
+});
+
+// SØGEFUNKTION
+function performSearch() {
+    const searchInput = document.querySelector("#machine-search").value.toLowerCase().trim(); // Brugerinput
+    let found = false; // variabel til at spore match
+
+
+}
