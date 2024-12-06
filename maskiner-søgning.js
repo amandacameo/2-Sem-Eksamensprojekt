@@ -90,4 +90,30 @@ if (!found) {
     displayMessage("Ingen maskine matchede din søgning. Prøv igen!");
 }
 
+// funktion til beskeder
+function displayMessage(message) {
+    const messageBox = document.querySelector(".search-message"); // find beskedboksen
+    if (!messageBox) {
+        // Hvis boksen ikke findes, opret en ny
+        const newMessageBox = document.createElement("div");
+        newMessageBox.classList.add("search-message");
+        newMessageBox.style.color = "blue"
+        newMessageBox.style.marginTop = "10px";
+        newMessageBox.style.fontSize = "16px";
+        newMessageBox.textContent = message;
+        document.querySelector(".search-bar").appendChild(newMessageBox);
+    } else {
+        // hvis boksen findes, opdater dens tekst
+        messageBox.textContent = message;
+        messageBox.style.display = "block";
+    }
 
+    // skjuler beskeden efter 3 sekunder
+    setTimeout(() => {
+        const messageBox = document.querySelector(".search-message");
+        if (messageBox) {
+            messageBox.style.display = "none";
+        }
+    }, 3000);
+
+}
