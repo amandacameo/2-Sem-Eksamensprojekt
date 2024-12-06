@@ -23,10 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const lastDay2025 = new Date("2025-12-31");
     const weekdays = generateWeekdays(firstDay2025, lastDay2025);
 
-    // Populer datePicker med hverdage
+
     weekdays.forEach((date) => {
         const option = document.createElement("option");
-        option.value = date.toISOString().split("T")[0]; // ISO-format (YYYY-MM-DD)
+        option.value = date.toISOString().split("T")[0];
         option.textContent = date.toLocaleDateString("da-DK", {
             weekday: "long",
             year: "numeric",
