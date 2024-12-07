@@ -80,13 +80,13 @@ main {
     color: var(--hvid);
 }
 
-.booking-calendar {
+.booking-calender {
     width: 48%;
     margin-left: 20px;
 }
 
 
-.calendar-select {
+.calender-select {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -112,7 +112,7 @@ main {
 }
 
 
-.calendar-select select {
+.calender-select select {
     width: 100%;
     padding: 15px;
     font-size: 16px;
@@ -130,7 +130,7 @@ main {
     appearance: none;
 }
 
-.calendar-select select:focus {
+.calender-select select:focus {
     background-color: var(--hvid);
     color: var(--mørkeblå);
 }
@@ -301,7 +301,7 @@ main {
 
 
 /* Tablet */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     main {
         width: 90%;
         margin-left: 5%;
@@ -319,28 +319,24 @@ main {
     }
 
     .booking-options,
-    .booking-calendar {
+    .booking-calender {
         width: 100%;
     }
 
     .booking-options label,
     .booking-options input[type="checkbox"],
-    .calendar-select select {
+    .calender-select select {
         font-size: 20px;
     }
 
-    .calendar-select {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 50%; 
-}
-
-    .user-info input,
-    .user-info select {
-        width: 100%;
+    .calender-select {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
     }
+
+
 
     .mobilepay-box {
         font-size: 20px;
@@ -348,7 +344,6 @@ main {
     }
 
     .price-list {
-        width: 100%;
         padding: 20px;
     }
 
@@ -378,12 +373,12 @@ main {
 }
 
 /* Mobil */
-@media (max-width: 390px) {
+@media (max-width: 768px) {
     main {
         width: 95%;
         margin-left: 2.5%;
-        box-sizing: border-box;
     }
+
 
     .header-pages {
         padding: 10px;
@@ -392,8 +387,6 @@ main {
     /* Booking system */
     .booking-box {
         padding: 15px;
-        width: 100%;
-        box-sizing: border-box;
     }
 
     .booking-container {
@@ -402,35 +395,73 @@ main {
         gap: 15px;
     }
 
-    .booking-options,
-    .booking-calendar {
+    #date-picker,
+    #time-picker {
+        font-size: 16px;
+        /* Gør teksten større */
+        padding: 12px;
+        /* Øger padding */
+        border-radius: 20px;
+        /* Blødere hjørner */
+        background-size: 15px 15px;
+        /* Mindsker pilen */
+        background-position: calc(100% - 15px) center;
+        /* Justerer pilens position */
         width: 100%;
-        box-sizing: border-box;
-    }
-
-    .booking-options label {
-        font-size: 14px;
+        /* Gør felterne bredere */
     }
 
     .booking-options input[type="checkbox"] {
-        width: 32px; 
-        height: 32px;
+        width: 40px;
+        /* Gør checkboxen større */
+        height: 40px;
         margin-right: 10px;
     }
 
-    .calendar-select select {
+    .user-info .reminder span {
         font-size: 14px;
-        width: 100%;
-        padding: 8px;
-        box-sizing: border-box;
+        /* Reducerer tekststørrelsen */
     }
+
+
+    .booking-calender {
+        width: 100%;
+    }
+
+
+    .calender-select select {
+        font-size: 16px;
+        /* Gør teksten større */
+        padding: 20px;
+        /* Tilføjer padding */
+        width: 150%;
+        /* Gør feltet bredere */
+        border-radius: 20px;
+        /* Blødere hjørner */
+    }
+
+
 
     .user-info input,
     .user-info select {
-        width: 100%;
+
         font-size: 14px;
-        padding: 8px;
-        box-sizing: border-box;
+        padding: 15px;
+
+
+    }
+
+    .lightblue-section {
+        padding: 15px;
+        text-align: center;
+        /* Centrerer teksten */
+
+    }
+
+    .lightblue-section .title,
+    .lightblue-section .sub-title {
+        font-size: 16px;
+        /* Reducerer fontstørrelsen */
     }
 
     .mobilepay-box {
@@ -443,19 +474,19 @@ main {
     }
 
     .price-list .title {
-        font-size: 18px; 
+        font-size: 18px;
         margin-bottom: 10px;
-        text-align: center; 
+        text-align: center;
     }
 
     .price-list .sub-title {
         font-size: 16px;
-        text-align: center; 
+        text-align: center;
     }
 
     .price-table th,
     .price-table td {
-        font-size: 12px; 
+        font-size: 14px;
         padding: 6px;
     }
 
@@ -463,28 +494,13 @@ main {
         padding: 10px;
     }
 
-    .calendar-select,
+    .calender-select,
     .user-info {
-        width: 100%;
+
         padding: 8px;
         margin-bottom: 10px;
         box-sizing: border-box;
     }
 
-    /* Vælg en dag og tid */
-    .calendar-select select,
-    .user-info select {
-        font-size: 14px;
-    }
 
-    .booking-options,
-    .booking-calendar {
-        width: 100%;
-    }
-
-    .booking-options input[type="checkbox"],
-    .calendar-select select {
-        width: 100%;
-        box-sizing: border-box;
-    }
 }
