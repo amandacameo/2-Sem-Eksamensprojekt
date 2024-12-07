@@ -51,7 +51,7 @@ body {
 /* Mobile */
 @media (max-width: 600px) {
     .learn-more {
-        font-size: 16px;
+        font-size: 12px;
         padding: 8px 20px;
     }
 }

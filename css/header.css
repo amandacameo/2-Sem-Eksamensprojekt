@@ -148,7 +148,7 @@
 
 
     .header {
-        height: 400px;
+        height: 600px;
         padding: 10px;
     }
 
@@ -167,7 +167,7 @@
 
     .header-nav {
         position: fixed;
-        bottom: 0;
+        top: 0px;
         left: 0;
         width: 100%;
         background-color: var(--lyseblå);
@@ -175,6 +175,7 @@
         box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
         border-radius: 0;
         padding: 10px 0;
+
     }
 
     .header-nav ul {
@@ -188,15 +189,16 @@
         font-size: 14px;
         padding: 5px 10px;
         text-align: center;
+        font-weight: bold;
     }
 
     .btn-book {
         position: fixed;
-        bottom: 200px;
+        bottom: 100px;
         right: 80px;
-        width: 40px;
-        height: 40px;
-        right: 50px;
+        width: 20px;
+        height: 20px;
+        right: 30px;
         border-radius: 100%;
         display: flex;
         justify-content: center;
@@ -205,6 +207,7 @@
         background-color: #ffbd59d8;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         padding: 30px;
+        font-size: 18px;
     }
 
 

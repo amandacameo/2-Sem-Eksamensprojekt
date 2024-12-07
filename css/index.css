@@ -242,17 +242,11 @@ body {
 
 /* Tablet-størrelse (op til 1024px) */
 @media (max-width: 1024px) {
-    .creative-section {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
+
 
     .creative-choice {
         width: 45%;
         height: auto;
-        padding: 20px;
     }
 
     .creative-choice .title {
@@ -296,8 +290,34 @@ body {
     }
 }
 
-/* Mobilstørrelse (op til 390px) */
 @media (max-width: 390px) {
+    .header-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-top: 200px;
+        display: flex;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+    }
+
+    .titel-slogan img {
+        max-width: 400px;
+
+    }
+
+    .creative-section {
+        display: flex;
+        gap: 20px;
+        height: 300px;
+    }
+
+    .creative-choice {
+        border-radius: 20px;
+    }
 
     .creative-choice .title {
         font-size: 16px;
@@ -354,4 +374,6 @@ body {
     .interview-quote .quote {
         font-size: 14px;
     }
+
+
 }
