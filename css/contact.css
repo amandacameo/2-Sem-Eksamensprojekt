@@ -70,3 +70,7 @@ main {
     color: var(--mørkeblå);
     text-decoration: underline;
 }
+
+.mail-contact:hover {
+    color: var(--blå);
+}
