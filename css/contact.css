@@ -74,3 +74,75 @@ main {
 .mail-contact:hover {
     color: var(--blå);
 }
+
+/* Tablet */
+@media (max-width: 900px) {
+    main {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .contact-info {
+        gap: 30px;
+    }
+
+    .contact-box {
+        width: 45%;
+    }
+
+    .contact-box h2 {
+        font-size: 28px;
+    }
+
+    .contact-box p {
+        font-size: 20px;
+    }
+
+    .contact-intro {
+        margin-top: 20px;
+        text-align: left; 
+        margin-left: 40px;
+        margin-right: 10px; 
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    main {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 10px;
+        padding-right: 10px; 
+    }
+
+    .contact-intro {
+        margin-top: 30px; 
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%; 
+    }
+
+    .contact-box {
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    .contact-box h2 {
+        font-size: 24px;
+    }
+
+    .contact-box p {
+        font-size: 18px;
+    }
+}

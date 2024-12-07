@@ -245,3 +245,164 @@ main {
 .badges-image img {
     width: 50%;
 }
+
+
+/* Tablet */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .lightblue-section-course {
+        padding: 5%;
+    }
+
+    .lightblue-section-course .title {
+        font-size: 36px;
+    }
+
+    .lightblue-section-course .sub-title {
+        font-size: 24px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .machines {
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+
+    .machine {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .machine img {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+    }
+
+    .learn-more-container {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .learn-more-text, .learn-more-image {
+        width: 100%;
+    }
+
+    .learn-more-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .badges-section {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .badges-text, .badges-image {
+        width: 100%;
+    }
+
+    .badges-image img {
+        width: 70%;
+    }
+}
+
+/* Mobil (iPhone 12 Pro, m.m.) */
+@media (max-width: 390px) {
+    main {
+        width: 90%;
+        margin-left: 1.8%;
+    }
+
+    .lightblue-section-course .learn {
+        margin-bottom: 10px;
+    }
+
+    .lightblue-section-course .title {
+        font-size: 24px;
+    }
+
+    .lightblue-section-course .sub-title {
+        font-size: 16px;
+    }
+
+    .search-bar {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .search-label {
+        font-size: 24px;
+    }
+
+    .machines {
+        flex-wrap: wrap;
+        justify-content: flex-start; 
+        align-items: flex-start;
+    }
+
+    .machine {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin-bottom: 20px;
+    }
+
+    .machine img {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+    }
+
+    .learn-more-container {
+        text-align: left; 
+    }
+
+    .learn-more-text h4 {
+        font-size: 24px; 
+    }
+
+    .learn-more-text .body-text,
+    .learn-more-text .popular-projects-title,
+    .learn-more-text .popular-projects-list {
+        font-size: 16px;
+    }
+
+    .badges-section {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;  
+        text-align: center;  
+    }
+
+    .badges-text {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .badges-text p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .badges-image {
+        width: 100%; 
+        margin: 20px;
+        text-align: center;
+    }
+
+    .badges-image img {
+        width: 90%;
+        max-width: 300px;
+    }
+}

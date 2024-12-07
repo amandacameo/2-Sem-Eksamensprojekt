@@ -298,3 +298,193 @@ main {
     margin-top: 10px;
     line-height: 1.5;
 }
+
+
+/* Tablet */
+@media (max-width: 900px) {
+    main {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    /* Justering af booking systemet */
+    .booking-box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .booking-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .booking-options,
+    .booking-calendar {
+        width: 100%;
+    }
+
+    .booking-options label,
+    .booking-options input[type="checkbox"],
+    .calendar-select select {
+        font-size: 20px;
+    }
+
+    .calendar-select {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%; 
+}
+
+    .user-info input,
+    .user-info select {
+        width: 100%;
+    }
+
+    .mobilepay-box {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .price-list {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .price-table {
+        font-size: 18px;
+    }
+
+    .lightblue-section {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .price-list .title {
+        font-size: 36px;
+    }
+
+    .price-list .sub-title {
+        font-size: 28px;
+    }
+
+    .price-table th,
+    .price-table td {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+/* Mobil */
+@media (max-width: 390px) {
+    main {
+        width: 95%;
+        margin-left: 2.5%;
+        box-sizing: border-box;
+    }
+
+    .header-pages {
+        padding: 10px;
+    }
+
+    /* Booking system */
+    .booking-box {
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .booking-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .booking-options,
+    .booking-calendar {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .booking-options label {
+        font-size: 14px;
+    }
+
+    .booking-options input[type="checkbox"] {
+        width: 32px; 
+        height: 32px;
+        margin-right: 10px;
+    }
+
+    .calendar-select select {
+        font-size: 14px;
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    .user-info input,
+    .user-info select {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    .mobilepay-box {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .price-list {
+        padding: 15px;
+    }
+
+    .price-list .title {
+        font-size: 18px; 
+        margin-bottom: 10px;
+        text-align: center; 
+    }
+
+    .price-list .sub-title {
+        font-size: 16px;
+        text-align: center; 
+    }
+
+    .price-table th,
+    .price-table td {
+        font-size: 12px; 
+        padding: 6px;
+    }
+
+    .lightblue-section {
+        padding: 10px;
+    }
+
+    .calendar-select,
+    .user-info {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Vælg en dag og tid */
+    .calendar-select select,
+    .user-info select {
+        font-size: 14px;
+    }
+
+    .booking-options,
+    .booking-calendar {
+        width: 100%;
+    }
+
+    .booking-options input[type="checkbox"],
+    .calendar-select select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
