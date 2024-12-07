@@ -76,7 +76,7 @@ function performSearch() {
             const machineSection = Array.from(document.querySelectorAll("h4"))
                 .find(section => section.textContent.toLowerCase() === machine.toLowerCase());
             if (machineSection) {
-                machineSection.scrollIntoView({ behavior: "smooth", block: "center" });
+                machineSection.scrollIntoView({ behavior: "smooth", block: "start" });
             }
             break;
         }

@@ -272,7 +272,7 @@ main {
 
     .machines {
         justify-content: center;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
     }
 
     .machine {
@@ -293,7 +293,8 @@ main {
         text-align: center;
     }
 
-    .learn-more-text, .learn-more-image {
+    .learn-more-text,
+    .learn-more-image {
         width: 100%;
     }
 
@@ -308,7 +309,8 @@ main {
         text-align: center;
     }
 
-    .badges-text, .badges-image {
+    .badges-text,
+    .badges-image {
         width: 100%;
     }
 
@@ -347,14 +349,14 @@ main {
 
     .machines {
         flex-wrap: wrap;
-        justify-content: flex-start; 
+        justify-content: flex-start;
         align-items: flex-start;
     }
 
     .machine {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         margin-bottom: 20px;
     }
 
@@ -365,11 +367,11 @@ main {
     }
 
     .learn-more-container {
-        text-align: left; 
+        text-align: left;
     }
 
     .learn-more-text h4 {
-        font-size: 24px; 
+        font-size: 24px;
     }
 
     .learn-more-text .body-text,
@@ -381,8 +383,8 @@ main {
     .badges-section {
         padding: 20px;
         flex-direction: column;
-        align-items: center;  
-        text-align: center;  
+        align-items: center;
+        text-align: center;
     }
 
     .badges-text {
@@ -396,7 +398,7 @@ main {
     }
 
     .badges-image {
-        width: 100%; 
+        width: 100%;
         margin: 20px;
         text-align: center;
     }
