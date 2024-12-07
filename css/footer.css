@@ -80,6 +80,11 @@
 
 /* Mobile view */
 @media (max-width: 768px) {
+
+    .footer {
+        margin-top: 50px;
+    }
+
     .footer-container {
         flex-direction: column;
         gap: 15px;
