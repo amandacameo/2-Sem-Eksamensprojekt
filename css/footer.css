@@ -1,32 +1,23 @@
 /* Footer */
-
-
 .footer {
     background-color: var(--lyseblå);
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     margin-top: 200px;
 }
 
-
+/* Footer container */
 .footer-container {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    max-width: 150%;
     margin: auto;
 }
 
-
+/* Footer sections */
 .footer-section {
     flex: 1;
     padding: 10px;
     text-align: center;
 }
-
 
 .footer-section .title {
     font-weight: bold;
@@ -34,72 +25,48 @@
     font-size: 24px;
 }
 
-
 .footer-section .sub-title {
     line-height: 1.6;
     font-size: 20px;
 }
 
-
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+.address-wrapper {
+    width: 200px;
 }
-
-
-.social-icons img {
-    width: 60px;
-    height: 60px;
-}
-
-
 
 .map-and-address {
     display: flex;
     gap: 20px;
 }
 
-
-.map-section {
-    flex-shrink: 0;
+.map-and-address iframe {
+    border-radius: 10px;
 }
 
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 
-.map-and-address .address-section .title {
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 24px;
 }
 
-
-.map-and-address .address-section .sub-title {
-    line-height: 1.6;
-    font-size: 20px;
+.social-icons img {
+    width: 60px;
+    height: 60px;
 }
 
-.mail-footer {
-    color: var(--blå);
-}
-
-.mail-footer:hover {
-    color: var(--mørkeblå);
-}
-
-/* Tablet */
+/* Tablet view */
 @media (max-width: 1024px) {
-    .footer {
-        margin-top: 100px;
-    }
-
     .footer-container {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
-    .footer-section {
-        padding: 10px 20px;
+    .map-and-address iframe {
+        width: 90%;
+        height: 180px;
     }
 
     .footer-section .title {
@@ -111,35 +78,48 @@
     }
 }
 
-@media (max-width: 390px) {
-    .footer {
-        padding: 15px;
-        margin-top: 50px;
-        /* Giver plads over footeren */
-    }
-
+/* Mobile view */
+@media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
-        align-items: center;
         gap: 15px;
     }
 
-    .footer-section .title {
+    .map-and-address {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .map-and-address .address-wrapper {
+        margin-bottom: 10px;
+        /* Lidt afstand mellem adresse og kort */
+    }
+
+    .address-wrapper .title {
+        font-size: 20px !important;
+
+    }
+
+    .address-wrapper .sub-title {
+        font-size: 16px !important;
+    }
+
+    .map-and-address iframe {
+        width: 100%;
+        height: 150px;
+    }
+
+    .map-and-address .address-wrapper .title {
+        font-size: 16px;
+    }
+
+    .map-and-address .address-wrapper .sub-title {
         font-size: 14px;
     }
 
-    .footer-section .sub-title {
-        font-size: 12px;
-    }
-
-
     .social-icons img {
-        width: 25px;
-        height: 25px;
-    }
-
-    .map-section iframe {
-        width: 100%;
-        height: 150px;
+        width: 60px;
+        height: 60px;
     }
 }
