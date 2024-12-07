@@ -320,11 +320,13 @@ main {
 }
 
 /* Mobil (iPhone 12 Pro, m.m.) */
-@media (max-width: 390px) {
+@media (max-width: 768px) {
     main {
         width: 90%;
         margin-left: 1.8%;
     }
+
+
 
     .lightblue-section-course .learn {
         margin-bottom: 10px;

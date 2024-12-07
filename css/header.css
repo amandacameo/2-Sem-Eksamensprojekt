@@ -152,16 +152,15 @@
         padding: 10px;
     }
 
-    .title-all h1 {
-        font-size: 60px;
-        margin: 0 auto;
+    .title-all .h1 {
+        margin-top: 50px;
+        text-align: left;
+        margin-bottom: 20px;
+        font-size: 72px;
     }
 
     .logo {
-        width: 60px;
-        height: 60px;
-        border-radius: 8px;
-        z-index: 2;
+        display: none;
     }
 
     .header-nav {
@@ -174,6 +173,7 @@
         box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
         border-radius: 0;
         padding: 10px 0;
+
 
     }
 
