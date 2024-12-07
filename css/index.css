@@ -321,17 +321,17 @@ body {
 
     .creative-choice .title {
         font-size: 16px;
-        /* Reduceret titelstørrelse */
+
     }
 
     .creative-choice .sub-title {
         font-size: 12px;
-        /* Mindre undertitel */
+
     }
 
     .wcyd-section .title {
         font-size: 24px;
-        /* Mindre titel */
+
     }
 
     .wcyd-section .sub-title {
@@ -359,7 +359,7 @@ body {
     .interview-quote,
     .to-action {
         width: 95%;
-        /* Tilpasser bredden */
+
         text-align: center;
     }
 
