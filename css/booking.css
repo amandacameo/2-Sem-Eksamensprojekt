@@ -191,8 +191,26 @@ main {
 }
 
 .btn-book {
-    margin-right: 0;
-    margin-left: auto;
+    display: none;
+
+}
+
+.btn-book-on-page {
+    background-color: var(--gul);
+    color: var(--mørkeblå);
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 100px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-book-on-page:hover {
+    background-color: var(--hvid);
+    color: var(--mørkeblå);
 }
 
 /* Bookingsystem slut */
@@ -352,9 +370,8 @@ main {
     }
 
     .lightblue-section {
-        flex-direction: column;
-        padding: 20px;
         margin-top: 50px;
+
     }
 
     .price-list .title {
@@ -395,20 +412,18 @@ main {
         gap: 15px;
     }
 
+    #date-picker {
+        margin-bottom: 50px;
+    }
+
     #date-picker,
     #time-picker {
         font-size: 16px;
-        /* Gør teksten større */
-        padding: 12px;
-        /* Øger padding */
+        padding: 14px;
         border-radius: 20px;
-        /* Blødere hjørner */
-        background-size: 15px 15px;
-        /* Mindsker pilen */
+
         background-position: calc(100% - 15px) center;
-        /* Justerer pilens position */
         width: 100%;
-        /* Gør felterne bredere */
     }
 
     .booking-options input[type="checkbox"] {
@@ -426,37 +441,20 @@ main {
 
     .booking-calender {
         width: 100%;
-    }
-
-
-    .calender-select select {
-        font-size: 16px;
-        /* Gør teksten større */
-        padding: 20px;
-        /* Tilføjer padding */
-        width: 150%;
-        /* Gør feltet bredere */
-        border-radius: 20px;
-        /* Blødere hjørner */
+        margin-left: 0;
     }
 
 
 
     .user-info input,
     .user-info select {
-
         font-size: 14px;
         padding: 15px;
-
-
-    }
-
-    .lightblue-section {
-        padding: 15px;
-        text-align: center;
-        /* Centrerer teksten */
+        padding-right: 175px;
 
     }
+
+
 
     .lightblue-section .title,
     .lightblue-section .sub-title {
@@ -491,13 +489,18 @@ main {
     }
 
     .lightblue-section {
-        padding: 10px;
+        width: 95%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-radius: 20px;
     }
 
     .calender-select,
     .user-info {
 
-        padding: 8px;
+        width: 100%;
         margin-bottom: 10px;
         box-sizing: border-box;
     }
