@@ -85,8 +85,8 @@ main {
 }
 
 
-/* Tablet version (max-width: 820px) */
-@media screen and (max-width: 820px) {
+/* Tablet version  */
+@media screen and (max-width: 1024px) {
     .main {
         width: 90%;
         margin-left: 5%;
@@ -122,15 +122,24 @@ main {
     }
 }
 
-/* Mobil version (max-width: 390px) */
-@media screen and (max-width: 390px) {
-    .main {
-        width: 100%;
-        margin-left: 0;
+/* Mobil version */
+@media screen and (max-width: 768px) {
+
+    main {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .title-all .h1 {
+        margin-top: 50px;
+        text-align: left;
+        margin-bottom: 20px;
+        font-size: 72px;
+        margin-left: 7%;
     }
 
     .case .title {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .case .sub-title {
@@ -143,10 +152,12 @@ main {
         margin: 20px;
         padding-left: 15px;
         padding-right: 15px;
+        border-radius: 20px;
+        margin-bottom: 100px;
     }
 
     .lightblue-section .title {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     .lightblue-section .sub-title {
@@ -154,8 +165,14 @@ main {
         margin-bottom: 30px;
     }
 
+    .case-photo {
+        border-radius: 20px;
+    }
+
     .case-photo img {
         max-width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
     }
 }
-
