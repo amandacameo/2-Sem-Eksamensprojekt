@@ -87,6 +87,15 @@ main {
         margin-left: 5%;
     }
 
+    .title-all .h1 {
+        margin-left: 7%;
+    }
+
+    .case {
+        width: 90%;
+        margin-left: 5%;
+    }
+
     .case .title {
         font-size: 48px;
     }
