@@ -171,8 +171,8 @@ main {
 
 
 
-/* Media Queries for tablet (max-width: 820px) */
-@media (max-width: 820px) {
+/* tablet */
+@media (max-width: 1024px) {
     main {
         width: 90%;
         margin-left: 5%;
@@ -238,8 +238,8 @@ main {
 
 
 
-/* Media Queries for mobil (max-width: 390px) */
-@media (max-width: 390px) {
+/* mobil */
+@media (max-width: 768px) {
 
     main {
         width: 100%;
@@ -248,13 +248,14 @@ main {
 
     .about-us-text h2 {
         font-size: 24px;
-        margin-left: 40px;
+        margin-left: 20px;
         margin-right: 20px;
+        margin-bottom: -5px;
     }
 
     .about-us-text .text {
         font-size: 16px;
-        margin-left: 40px;
+        margin-left: 20px;
         margin-right: 20px;
     }
 
@@ -262,29 +263,46 @@ main {
         flex-direction: column;
         align-items: center;
         margin-bottom: 10px;
-        width: 100%; 
+        width: 100%;
+
+
     }
 
     .about-us-image img {
-        max-width: 320px;
-        height: auto; 
+        max-width: 400px;
+        height: auto;
     }
 
-    .about-us-container.left .about-us-image {
-        display: none;
+    .about-us-image.left img {
+        max-width: 400px;
+        height: auto;
+    }
+
+    .about-us-container.left {
+        margin-bottom: 50px;
     }
 
     .lightblue-section {
-        margin-top: 30px;
+        margin-top: 100px;
         margin-left: 10px;
         margin-right: 10px;
         padding-left: 10px;
         padding-right: 10px;
+        border-radius: 20px;
+    }
+
+    .lightblue-section .title {
+        font-size: 24px;
+
+    }
+
+    .lightblue-section .sub-title {
+        font-size: 18px;
     }
 
     .team-container {
         justify-content: space-evenly;
-        width: 95%; 
+        width: 95%;
     }
 
     .team-member {
@@ -292,15 +310,10 @@ main {
     }
 
     .team-member img {
-        height: 120px;
-        width: 120px;
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
     }
 
-    .lightblue-section .title {
-        font-size: 36px;
-    }
 
-    .lightblue-section .sub-title {
-        font-size: 18px;
-    }
 }

@@ -126,17 +126,11 @@ main {
 @media screen and (max-width: 768px) {
 
     main {
-        width: 95%;
-        margin-left: 2.5%;
+        width: 100%;
+        margin-left: 0;
     }
 
-    .title-all .h1 {
-        margin-top: 50px;
-        text-align: left;
-        margin-bottom: 20px;
-        font-size: 72px;
-        margin-left: 7%;
-    }
+
 
     .case .title {
         font-size: 32px;
