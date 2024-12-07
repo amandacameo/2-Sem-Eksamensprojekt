@@ -79,6 +79,14 @@
     font-size: 20px;
 }
 
+.mail-footer {
+    color: var(--blå);
+}
+
+.mail-footer:hover {
+    color: var(--mørkeblå);
+}
+
 /* Tablet */
 @media (max-width: 1024px) {
     .footer {
