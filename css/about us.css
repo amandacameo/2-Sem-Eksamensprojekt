@@ -160,3 +160,11 @@ main {
     font-size: 24px;
     color: var(--hvid);
 }
+
+.mail {
+    color: var(--hvid);
+}
+
+.mail:hover {
+    color: var(--gul);
+}

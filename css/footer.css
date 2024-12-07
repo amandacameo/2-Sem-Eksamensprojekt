@@ -1,6 +1,6 @@
 /* Footer */
 
-/* Footer container */
+
 .footer {
     background-color: var(--lyseblå);
     padding: 20px;
@@ -11,7 +11,7 @@
     margin-top: 200px;
 }
 
-/* Footer content layout */
+
 .footer-container {
     width: 100%;
     display: flex;
@@ -20,27 +20,27 @@
     margin: auto;
 }
 
-/* Footer section styling */
+
 .footer-section {
     flex: 1;
     padding: 10px;
     text-align: center;
 }
 
-/* Title styling for each section */
+
 .footer-section .title {
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 24px;
 }
 
-/* Subtitle styling for each section */
+
 .footer-section .sub-title {
     line-height: 1.6;
     font-size: 20px;
 }
 
-/* Social Media Icons Styling */
+
 
 .social-icons {
     display: flex;
@@ -48,32 +48,32 @@
     gap: 10px;
 }
 
-/* Individual social media icon size */
+
 .social-icons img {
     width: 60px;
     height: 60px;
 }
 
-/* Map and Address Section Styling */
+
 
 .map-and-address {
     display: flex;
     gap: 20px;
 }
 
-/* Styling for map section */
+
 .map-section {
     flex-shrink: 0;
 }
 
-/* Address section styling within map-and-address */
+
 .map-and-address .address-section .title {
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 24px;
 }
 
-/* Address subtitle styling */
+
 .map-and-address .address-section .sub-title {
     line-height: 1.6;
     font-size: 20px;
