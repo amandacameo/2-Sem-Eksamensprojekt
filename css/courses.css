@@ -340,9 +340,10 @@ main {
         font-size: 16px;
     }
 
-    .search-bar {
-        width: 90%;
-        padding: 30px;
+
+    .info-box .title-box {
+        font-size: 18px;
+        margin: 10px;
     }
 
     .search-label {
@@ -351,35 +352,52 @@ main {
 
     .machines {
         flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+
     }
 
     .machine {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
 
     .machine img {
         width: 100px;
         height: 100px;
         margin-top: 10px;
+
     }
 
-    .learn-more-container {
-        text-align: left;
+    .search-bar {
+        width: 90%;
+        padding: 30px;
+        margin-top: 50px;
+        margin-bottom: 10px;
     }
+
+
 
     .learn-more-text h4 {
-        font-size: 24px;
+        font-size: 32px;
     }
 
     .learn-more-text .body-text,
     .learn-more-text .popular-projects-title,
     .learn-more-text .popular-projects-list {
         font-size: 16px;
+        text-align: left;
+    }
+
+    .learn-more-container.left {
+        flex-direction: column;
+    }
+
+    .popular-projects-list {
+        text-align: left;
+        margin-left: 0px;
     }
 
     .badges-section {
