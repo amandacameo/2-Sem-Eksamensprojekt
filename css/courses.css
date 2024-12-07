@@ -322,11 +322,15 @@ main {
 /* Mobil (iPhone 12 Pro, m.m.) */
 @media (max-width: 768px) {
     main {
-        width: 90%;
-        margin-left: 1.8%;
+        width: 95%;
+        margin-left: 2.5%;
     }
 
-
+    .lightblue-section-course {
+        width: 95%;
+        padding: 2.5%;
+        border-radius: 20px;
+    }
 
     .lightblue-section-course .learn {
         margin-bottom: 10px;
@@ -342,12 +346,19 @@ main {
 
 
     .info-box .title-box {
-        font-size: 18px;
+        font-size: 20px;
         margin: 10px;
+    }
+
+    .search-bar {
+        width: 95% !important;
+        padding: 2.5% !important;
+        border-radius: 20px;
     }
 
     .search-label {
         font-size: 24px;
+        margin-top: 20px;
     }
 
     .machines {
@@ -389,10 +400,21 @@ main {
     .learn-more-text .popular-projects-list {
         font-size: 16px;
         text-align: left;
+        margin-right: 0;
     }
 
     .learn-more-container.left {
         flex-direction: column;
+        text-align: left;
+    }
+
+    .learn-more-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .learn-more-text.left {
+        margin: 0;
     }
 
     .popular-projects-list {
@@ -401,20 +423,30 @@ main {
     }
 
     .badges-section {
-        padding: 20px;
-        flex-direction: column;
         align-items: center;
-        text-align: center;
+        justify-content: center;
+        width: 95%;
+        margin-left: 2.5%;
+        border-radius: 20px;
     }
 
     .badges-text {
         width: 100%;
         margin: 0 auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .badges-text .title {
+        margin-bottom: 0;
+        margin-top: 20px;
     }
 
     .badges-text p {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 1.4;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .badges-image {
