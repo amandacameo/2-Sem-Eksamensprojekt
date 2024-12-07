@@ -239,3 +239,119 @@ body {
     background-color: var(--mørkeblå);
     color: var(--hvid);
 }
+
+/* Tablet-størrelse (op til 1024px) */
+@media (max-width: 1024px) {
+    .creative-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .creative-choice {
+        width: 45%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .creative-choice .title {
+        font-size: 24px;
+        /* Reduceret skriftstørrelse */
+    }
+
+    .creative-choice .sub-title {
+        font-size: 14px;
+        /* Mindre undertitel */
+    }
+
+    .wcyd-section .title {
+        font-size: 48px;
+        /* Reduceret titelstørrelse */
+    }
+
+    .wcyd-section .sub-title {
+        font-size: 18px;
+        width: 90%;
+        /* Gør teksten mindre og centreret */
+    }
+
+    .lightblue-section {
+        flex-direction: column;
+        /* Skifter layout til kolonne */
+        padding: 20px;
+    }
+
+    .interview-section {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .interview-quote,
+    .to-action {
+        width: 90%;
+        /* Tilpasset bredden */
+        text-align: center;
+    }
+}
+
+/* Mobilstørrelse (op til 390px) */
+@media (max-width: 390px) {
+
+    .creative-choice .title {
+        font-size: 16px;
+        /* Reduceret titelstørrelse */
+    }
+
+    .creative-choice .sub-title {
+        font-size: 12px;
+        /* Mindre undertitel */
+    }
+
+    .wcyd-section .title {
+        font-size: 24px;
+        /* Mindre titel */
+    }
+
+    .wcyd-section .sub-title {
+        font-size: 12px;
+        width: 90%;
+        line-height: 1.4;
+    }
+
+    .lightblue-section {
+        margin-top: 20px;
+    }
+
+    .lightblue-section .title {
+        font-size: 20px;
+    }
+
+    .lightblue-section .sub-title {
+        font-size: 12px;
+    }
+
+    .interview-section {
+        margin-top: 10px;
+    }
+
+    .interview-quote,
+    .to-action {
+        width: 95%;
+        /* Tilpasser bredden */
+        text-align: center;
+    }
+
+    .interview-quote .title {
+        font-size: 18px;
+    }
+
+    .interview-quote .sub-title {
+        font-size: 12px;
+    }
+
+    .interview-quote .quote {
+        font-size: 14px;
+    }
+}
