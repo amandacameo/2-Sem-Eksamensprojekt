@@ -158,12 +158,13 @@ main {
 
 .user-info input,
 .user-info select {
-    width: 49.5%;
-    padding: 10px;
+    width: 30%;
+    padding: 20px;
+    height: 40px;
     padding-right: 0;
     margin-bottom: 15px;
     border: none;
-    border-radius: 40px;
+    border-radius: 20px;
     background-color: var(--hvid);
     color: var(--mørkeblå);
     font-size: 24px;
@@ -175,13 +176,30 @@ main {
 }
 
 .user-info input[type="checkbox"] {
-    width: 40px;
+    width: 45px;
     height: 40px;
     cursor: pointer;
     margin-left: 20px;
     border-radius: 15px;
+    border: 2px solid var(--hvid);
+    background-color: var(--hvid);
     appearance: none;
+    position: relative;
 }
+
+.user-info input[type="checkbox"]:checked {
+    background-color: var(--hvid);
+    border-color: var(--gul);
+}
+
+.user-info input[type="checkbox"]:checked::after {
+    content: "X";
+    color: var(--gul);
+    font-size: 32px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
 
 .user-info .reminder {
     margin-top: 40px;
@@ -195,6 +213,8 @@ main {
     font-weight: bold;
     margin-bottom: 5px;
 }
+
+
 
 .btn-book {
     display: none;
