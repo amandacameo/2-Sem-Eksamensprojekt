@@ -103,6 +103,11 @@ body {
     border-radius: 40px;
 }
 
+.wcyd-section .learn-more:hover {
+    background-color: var(--lyseblå);
+    color: var(--mørkeblå);
+}
+
 /*------SEASON SECTION------*/
 .lightblue-section {
     display: flex;
@@ -221,6 +226,10 @@ body {
     text-align: center;
 }
 
+.to-action .learn-more:hover {
+    background-color: var(--lyseblå);
+    color: var(--mørkeblå);
+}
 
 
 /* Tablet-størrelse */

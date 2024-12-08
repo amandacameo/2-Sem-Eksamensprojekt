@@ -235,7 +235,7 @@ main {
 }
 
 .btn-book-on-page:hover {
-    background-color: var(--hvid);
+    background-color: var(--lyseblå);
     color: var(--mørkeblå);
 }
 
