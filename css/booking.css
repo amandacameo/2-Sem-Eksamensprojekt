@@ -81,8 +81,8 @@ main {
 
 .booking-options input[type=checkbox]:checked+label {
     font-style: normal;
-    background-color: var(--mørkeblå);
-    color: var(--hvid);
+    background-color: var(--gul);
+    color: var(--mørkeblå);
 }
 
 .booking-calender {
