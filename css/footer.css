@@ -23,11 +23,13 @@
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 24px;
+    color: var(--mørkeblå);
 }
 
 .footer-section .sub-title {
     line-height: 1.6;
     font-size: 20px;
+    color: var(--mørkeblå);
 }
 
 .address-wrapper {
@@ -54,6 +56,10 @@
 .social-icons img {
     width: 60px;
     height: 60px;
+}
+
+.mail-footer {
+    color: var(--blå);
 }
 
 /* Tablet view */
