@@ -178,8 +178,9 @@ main {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    border-radius: 40px;
     margin-left: 20px;
+    border-radius: 15px;
+    appearance: none;
 }
 
 .user-info .reminder {
