@@ -248,7 +248,7 @@ main {
 
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     main {
         width: 90%;
         margin-left: 5%;
@@ -319,7 +319,7 @@ main {
     }
 }
 
-/* Mobil (iPhone 12 Pro, m.m.) */
+/* Mobil */
 @media (max-width: 768px) {
     main {
         width: 95%;

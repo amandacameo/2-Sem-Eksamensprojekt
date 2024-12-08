@@ -437,14 +437,12 @@ main {
 
     .booking-options input[type="checkbox"] {
         width: 40px;
-        /* Gør checkboxen større */
         height: 40px;
         margin-right: 10px;
     }
 
     .user-info .reminder span {
         font-size: 14px;
-        /* Reducerer tekststørrelsen */
     }
 
 
@@ -468,7 +466,6 @@ main {
     .lightblue-section .title,
     .lightblue-section .sub-title {
         font-size: 16px;
-        /* Reducerer fontstørrelsen */
     }
 
     .mobilepay-box {
