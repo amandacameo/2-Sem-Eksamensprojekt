@@ -148,7 +148,9 @@ body {
 }
 
 .lightblue-section img {
-    width: 30%;
+    width: 80%;
+    border-radius: 40px;
+    margin-left: -100px;
 }
 
 /*------INTERVIEW------*/
