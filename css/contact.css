@@ -85,6 +85,10 @@ main {
         margin-left: 5%;
     }
 
+    .title-all h1 {
+        margin-left: 15% !important;
+    }
+
     .contact-info {
         gap: 30px;
     }
