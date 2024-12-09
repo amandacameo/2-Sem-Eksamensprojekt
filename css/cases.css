@@ -24,7 +24,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: ;
 }
 
 .case-photo img[src="images/case/case2.png"] {
