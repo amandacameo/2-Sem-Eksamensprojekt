@@ -145,6 +145,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .lightblue-section img {
@@ -243,6 +244,10 @@ body {
         height: auto;
     }
 
+    .creative-section {
+        gap: 50px;
+    }
+
     .creative-choice .title {
         font-size: 24px;
         /* Reduceret skriftstørrelse */
@@ -262,6 +267,12 @@ body {
         font-size: 18px;
         width: 90%;
         /* Gør teksten mindre og centreret */
+    }
+
+    .lightblue-section img {
+        align-items: center;
+        margin-left: 5px;
+        margin-bottom: 80px;
     }
 
     .lightblue-section {
@@ -381,9 +392,13 @@ body {
         margin-bottom: 20px;
     }
 
+
     .lightblue-section .image {
-        /* Flyt billedet til efter undertitlen */
-        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: -80px;
     }
 
     .lightblue-section .image img {
