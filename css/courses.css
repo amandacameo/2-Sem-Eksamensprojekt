@@ -255,67 +255,131 @@ main {
     }
 
     .lightblue-section-course {
-        padding: 5%;
+        width: 97%;
+        padding: 3%;
+        border-radius: 25px;
+        text-align: center;
+    }
+
+    .lightblue-section-course .learn {
+        margin-bottom: 20px;
     }
 
     .lightblue-section-course .title {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .lightblue-section-course .sub-title {
-        font-size: 24px;
+        font-size: 20px;
+        line-height: 1.5;
     }
 
     .search-bar {
-        width: 100%;
+        width: 60%;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 20px;
     }
 
     .machines {
-        justify-content: center;
+        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
     }
 
     .machine {
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin-bottom: 20px;
     }
 
     .machine img {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         margin-top: 10px;
+    }
+
+
+
+
+
+    .learn-more-container.left {
+        flex-direction: column;
+        text-align: center;
+
     }
 
     .learn-more-container {
         flex-direction: column;
-        height: auto;
         text-align: center;
+    }
+
+    .learn-more-text.left {
+        margin: 0;
     }
 
     .learn-more-text,
     .learn-more-image {
-        width: 100%;
+        width: 95%;
+        margin-bottom: 50px !important;
+    }
+
+    .learn-more-text .body-text,
+    .learn-more-text .popular-projects-title,
+    .learn-more-text .popular-projects-list {
+        font-size: 20px;
+        text-align: left;
+        margin-right: 0;
+    }
+
+    .learn-more-container.left {
+        flex-direction: column;
+        text-align: left;
+
+    }
+
+    .learn-more-container {
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 200px;
+    }
+
+
+
+    .learn-more-text.left {
+        margin: 0;
+    }
+
+    .popular-projects-list {
+        text-align: left;
+        margin-left: 0px;
     }
 
     .learn-more-image img {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
 
     .badges-section {
-        flex-direction: column;
-        height: auto;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+        padding-bottom: 200px;
     }
 
-    .badges-text,
-    .badges-image {
-        width: 100%;
+    .badges-text {
+        width: 48%;
     }
 
     .badges-image img {
-        width: 70%;
+        width: 80%;
+        padding-top: 200px;
+        /* Reducerer billedstørrelse */
     }
 }
 

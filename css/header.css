@@ -121,10 +121,21 @@
         height: 600px;
     }
 
-    .title-all h1 {
+
+    .title-all .h1 {
+        margin-top: 50px;
+        text-align: left;
+        margin-bottom: 20px;
         font-size: 150px;
-        text-align: center;
-        margin: 0 auto;
+        margin-left: 20px;
+    }
+
+    .contact-page .title-all .h1 {
+        margin-top: 50px;
+        text-align: left;
+        margin-bottom: 20px;
+        font-size: 72px;
+        margin-left: 20px;
     }
 
     .logo {
