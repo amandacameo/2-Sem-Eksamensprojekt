@@ -166,7 +166,7 @@ body {
 
 .interview-quote {
     width: 50%;
-    height: 500px;
+    height: auto;
     background-color: var(--blå);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     color: var(--hvid);
@@ -201,7 +201,7 @@ body {
 .interview-quote img {
     width: 300px;
     margin-top: -40px;
-    margin-bottom: -40px;
+    margin-bottom: -20px;
 }
 
 .to-action {
