@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/courses.css">
     <script src="maskiner-søgning.js" defer></script>
-
+    <script type="text/javascript" src="js/burger-menu.js"></script>
 
 </head>
 
@@ -25,7 +25,7 @@
                     <img src="images/logo/logo.png" alt="FabLab Logo">
                 </a>
             </div>
-            <nav class="header-nav">
+            <nav class="header-nav" id="header-nav">
                 <ul>
                     <li><a href="index.html">Hjem</a></li>
                     <li><a href="courses.html" class="active">Kurser</a></li>
@@ -35,6 +35,12 @@
                     <li><a href="contact.html" class="active">Kontakt</a></li>
                 </ul>
             </nav>
+
+            <div class="header-nav-burger-menu" id="burger-menu">
+                <img src="images/icons/burgermenu-mørk.png" id="dark-burger-icon" style="display:none;">
+                <img src="images/icons/burgermenu.lys.png" id="light-burger-icon">
+            </div>
+
             <div class="header-buttons">
                 <a href="booking.html" class="btn-book">Book</a>
             </div>
