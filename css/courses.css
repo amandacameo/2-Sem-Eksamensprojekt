@@ -164,6 +164,9 @@ main {
     flex-direction: row-reverse;
 }
 
+
+
+
 .learn-more-text {
     width: 50%;
     color: var(--hvid);
@@ -193,13 +196,17 @@ main {
 
 .learn-more-image {
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .learn-more-image img {
-    width: 700px;
-    height: 700px;
-    align-items: center;
+    width: 100%;
 }
+
+
+
 
 .badges-section {
     display: flex;
@@ -344,7 +351,7 @@ main {
     .learn-more-container {
         flex-direction: column;
         text-align: left;
-        margin-bottom: 200px;
+        margin-bottom: 0;
     }
 
 
@@ -365,11 +372,13 @@ main {
 
     .badges-section {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
-        width: 100%;
+        width: 98%;
+        padding-left: 1%;
+        padding-right: 1%;
+        height: auto;
         gap: 20px;
-        padding-bottom: 200px;
     }
 
     .badges-text {
@@ -377,8 +386,7 @@ main {
     }
 
     .badges-image img {
-        width: 80%;
-        padding-top: 200px;
+        width: 100%;
         /* Reducerer billedstørrelse */
     }
 }
@@ -518,7 +526,7 @@ main {
     }
 
     .badges-image {
-        width: 100%;
+        height: 50;
         margin: 20px;
         text-align: center;
     }
