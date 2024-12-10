@@ -170,6 +170,7 @@ main {
 .learn-more-text {
     width: 50%;
     color: var(--hvid);
+    margin: 20px;
 }
 
 .learn-more-text.left {
@@ -199,10 +200,12 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px;
 }
 
 .learn-more-image img {
     width: 100%;
+    border-radius: 40px;
 }
 
 
@@ -491,6 +494,10 @@ main {
 
     .learn-more-text.left {
         margin: 0;
+    }
+
+    .learn-more-image img {
+        border-radius: 20px;
     }
 
     .popular-projects-list {

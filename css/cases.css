@@ -57,7 +57,6 @@ main {
 .lightblue-section {
     display: flex;
     justify-content: center;
-    background-color: var(--lyseblå);
     border-radius: 30px;
     text-align: center;
     margin-top: 100px;
@@ -71,21 +70,25 @@ main {
 
 .lightblue-section .title {
     font-weight: bold;
-    font-size: 48px;
-    color: var(--mørkeblå);
+    font-size: 72px;
+    color: var(--hvid);
     text-align: center;
 
 }
 
 .lightblue-section .sub-title {
-    color: var(--mørkeblå);
-    font-size: 24px;
+    color: var(--hvid);
+    font-size: 32px;
     line-height: 1.6;
     text-align: center;
     margin-bottom: 50px;
 }
 
 .sub-title a {
+    color: var(--gul);
+}
+
+.footer .sub-title a {
     color: var(--blå);
 }
 
