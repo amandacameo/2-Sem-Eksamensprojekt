@@ -112,13 +112,12 @@ body {
     margin-bottom: 25px;
 }
 
-.wcyd-section img {
+.wcyd-video {
     width: 80%;
     border-radius: 40px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-
+    outline: none;
 }
-
 
 
 .wcyd-section .learn-more:hover {
