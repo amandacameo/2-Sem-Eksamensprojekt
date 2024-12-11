@@ -533,7 +533,7 @@ main {
     }
 
     .badges-image {
-        height: 50;
+        height: 50%;
         margin: 20px;
         text-align: center;
     }

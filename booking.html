@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/booking.css">
-    <script type="text/javascript" src="js/booking.js" defer></script>
-    <script type="text/javascript" src="js/burger-menu.js"></script>
+    <script src="js/booking.js" defer></script>
+    <script src="js/burger-menu.js"></script>
 </head>
 
 <body class="general-page">
@@ -29,15 +29,16 @@
                     <li><a href="index.html">Hjem</a></li>
                     <li><a href="courses.html" class="active">Kurser</a></li>
                     <li><a href="cases.html" class="active">Cases</a></li>
-                    <li><a href="about us.html" class="active ">Om os</a></li>
+                    <li><a href="about_us.html" class="active">Om os</a></li>
                     <li><a href="booking.html" class="active">Booking</a></li>
                     <li><a href="contact.html" class="active">Kontakt</a></li>
                 </ul>
             </nav>
 
             <div class="header-nav-burger-menu" id="burger-menu">
-                <img src="images/icons/burgermenu-mørk.png" id="dark-burger-icon" style="display:none;">
-                <img src="images/icons/burgermenu.lys.png" id="light-burger-icon">
+                <img src="images/icons/burgermenu-mørk.png" alt="Burger menu" id="dark-burger-icon"
+                    style="display:none;">
+                <img src="images/icons/burgermenu.lys.png" alt="Burger menu" id="light-burger-icon">
             </div>
 
             <div class="header-buttons">
@@ -91,8 +92,8 @@
                                 <option value="" disabled selected>Vælg et tidspunkt</option>
                             </select>
                         </div>
-                    <!-- Mandagsbesked -->
-                    <p id="monday-message" style="display:none; color: var(--gul);"></p>
+                        <!-- Mandagsbesked -->
+                        <p id="monday-message" style="display:none; color: var(--gul);"></p>
 
                     </div>
 
@@ -116,6 +117,7 @@
                         </form>
                     </div>
                 </div>
+            </div>
         </section>
 
 
@@ -123,7 +125,7 @@
         <!--prisliste-->
 
 
-        <section class="lightblue-section">
+        <div class="lightblue-section">
             <div class="learn">
                 <p class="title"><b>Alle uddannelsesrettede opgaver er gratis.</b></p>
                 <p class="sub-title">
@@ -133,7 +135,7 @@
                 </p>
             </div>
 
-        </section>
+        </div>
 
 
 
