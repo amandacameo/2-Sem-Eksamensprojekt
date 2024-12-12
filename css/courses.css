@@ -17,6 +17,8 @@ main {
     margin-left: 10%;
 }
 
+/* Beskrivende kasse med maskiner */
+
 .lightblue-section-course {
     display: flex;
     flex-direction: column;
@@ -43,6 +45,80 @@ main {
     font-size: 32px;
     line-height: 1.6;
     text-align: left;
+}
+
+
+
+.contact-link {
+    color: var(--mørkeblå);
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #003366;
+}
+
+
+
+
+.info-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.info-box .title-box {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: var(--mørkeblå);
+}
+
+.machines {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.machine img {
+    width: 200px;
+    height: 200px;
+}
+
+.search-input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--hvid);
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.search-input-wrapper input {
+    flex: 1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-input-wrapper button {
+    background-color: var(--mørkeblå);
+    color: var(--hvid);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-input-wrapper button:hover {
+    background-color: var(--blå);
 }
 
 .search-bar {
@@ -79,75 +155,6 @@ main {
     line-height: 1.5;
 }
 
-.contact-link {
-    color: var(--mørkeblå);
-    font-weight: bold;
-    text-decoration: underline;
-    transition: color 0.3s ease;
-}
-
-.contact-link:hover {
-    color: #003366;
-}
-
-.search-input-wrapper {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 600px;
-    background-color: var(--hvid);
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.search-input-wrapper input {
-    flex: 1;
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    outline: none;
-}
-
-.search-input-wrapper button {
-    background-color: var(--mørkeblå);
-    color: var(--hvid);
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.search-input-wrapper button:hover {
-    background-color: var(--blå);
-}
-
-
-.info-box {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.info-box .title-box {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 50px;
-    color: var(--mørkeblå);
-}
-
-.machines {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.machine img {
-    width: 200px;
-    height: 200px;
-}
 
 .learn-more-section {
     display: flex;
@@ -163,8 +170,6 @@ main {
 .learn-more-container.left {
     flex-direction: row-reverse;
 }
-
-
 
 
 .learn-more-text {
@@ -390,7 +395,6 @@ main {
 
     .badges-image img {
         width: 100%;
-        /* Reducerer billedstørrelse */
     }
 }
 

@@ -140,7 +140,7 @@ main {
 .team-member {
     text-align: center;
     width: 25%;
-    /* Fire elementer per række med gap */
+
 }
 
 .team-member .name {
@@ -186,7 +186,7 @@ main {
         font-size: 18px;
     }
 
-    /* Ændrer retning til column for at placere billede under teksten */
+
     .about-us-container {
         display: flex;
         flex-direction: column;
@@ -201,12 +201,12 @@ main {
         justify-content: center;
     }
 
-    /* Skjuler det første billede på tablet og mobil */
+
     .about-us-container.left .about-us-image {
         display: none;
     }
 
-    /* Justering af billede, så det ikke strækkes */
+
     .about-us-image img {
         width: 100%;
         max-width: 500px;

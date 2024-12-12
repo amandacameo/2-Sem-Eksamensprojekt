@@ -267,23 +267,19 @@ body {
 
     .creative-choice .title {
         font-size: 24px;
-        /* Reduceret skriftstørrelse */
     }
 
     .creative-choice .sub-title {
         font-size: 14px;
-        /* Mindre undertitel */
     }
 
     .wcyd-section .title {
         font-size: 48px;
-        /* Reduceret titelstørrelse */
     }
 
     .wcyd-section .sub-title {
         font-size: 18px;
         width: 90%;
-        /* Gør teksten mindre og centreret */
     }
 
     .lightblue-section img {
@@ -294,7 +290,6 @@ body {
 
     .lightblue-section {
         flex-direction: column;
-        /* Skifter layout til kolonne */
         padding: 20px;
     }
 
@@ -307,14 +302,13 @@ body {
     .interview-quote,
     .to-action {
         width: 90%;
-        /* Tilpasset bredden */
         text-align: center;
     }
 }
 
 
 
-
+/*------Mobil størrelse------*/
 @media (max-width: 768px) {
     .header-container {
         display: flex;
@@ -363,8 +357,6 @@ body {
         margin-bottom: 0;
     }
 
-
-
     .wcyd-section .title {
         font-size: 24px;
     }
@@ -383,8 +375,6 @@ body {
     .wcyd-section .learn-more {
         font-size: 16px;
     }
-
-
 
     .lightblue-section {
         flex-direction: column-reverse;

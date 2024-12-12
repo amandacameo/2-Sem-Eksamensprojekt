@@ -142,7 +142,7 @@ main {
 
 
 
-/* Brugeroplysninger - Justering */
+/* Brugeroplysninger */
 .user-info {
     margin-top: 20px;
     width: 100%;
@@ -354,7 +354,6 @@ main {
         margin-left: 5%;
     }
 
-    /* Justering af booking systemet */
     .booking-box {
         width: 100%;
         padding: 20px;
@@ -451,7 +450,7 @@ main {
         padding: 10px;
     }
 
-    /* Booking system */
+
     .booking-box {
         padding: 15px;
     }

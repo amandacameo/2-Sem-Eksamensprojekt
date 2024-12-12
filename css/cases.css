@@ -93,7 +93,7 @@ main {
 }
 
 
-/* Tablet version  */
+/* Tablet  */
 @media screen and (max-width: 1024px) {
     .main {
         width: 90%;
@@ -139,7 +139,7 @@ main {
     }
 }
 
-/* Mobil version */
+/* Mobil  */
 @media screen and (max-width: 768px) {
 
     main {

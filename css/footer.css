@@ -5,14 +5,14 @@
     margin-top: 200px;
 }
 
-/* Footer container */
+
 .footer-container {
     width: 100%;
     display: flex;
     margin: auto;
 }
 
-/* Footer sections */
+
 .footer-section {
     flex: 1;
     padding: 10px;
@@ -45,7 +45,7 @@
     border-radius: 10px;
 }
 
-/* Social Media Icons */
+/* sociale medie ikoner */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -62,7 +62,7 @@
     color: var(--blå);
 }
 
-/* Tablet view */
+/* Tablet */
 @media (max-width: 1024px) {
     .footer-container {
         flex-direction: column;
@@ -90,7 +90,7 @@
     }
 }
 
-/* Mobile view */
+/* Mobil */
 @media (max-width: 768px) {
 
     .footer {
@@ -110,7 +110,6 @@
 
     .map-and-address .address-wrapper {
         margin-bottom: 10px;
-        /* Lidt afstand mellem adresse og kort */
     }
 
     .address-wrapper .title {
