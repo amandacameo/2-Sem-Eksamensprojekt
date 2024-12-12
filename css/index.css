@@ -315,6 +315,13 @@ body {
         justify-content: center;
     }
 
+    .wcyd-video {
+        width: 90%;
+        border-radius: 20px;
+        outline: none;
+        margin-bottom: 50px;
+    }
+
     .logo {
         margin-top: 200px;
         display: flex;
